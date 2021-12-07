@@ -91,41 +91,7 @@ include 'header.php';
             </div> 
 
 
-                        <!--
-                         Sidebar
-                        <div class="col-md-3 blog-standard-sidebar sidebar-right"> 
-
-                            <div class="blog-widget">
-                                <h5>About Purefive</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat.</p>
-                            </div>  
-                            
-                            <div class="blog-widget">
-                                <h5>Categories</h5>
-                                <ul class="category-list list-icons">
-                                    <li><a href="#"><i class="ion-android-checkmark-circle"></i>Branding</a></li>
-                                    <li><a href="#"><i class="ion-android-checkmark-circle"></i>Design</a></li>
-                                    <li><a href="#"><i class="ion-android-checkmark-circle"></i>Photography</a></li> 
-                                    <li><a href="#"><i class="ion-android-checkmark-circle"></i>Apps</a></li>
-                                    <li><a href="#"><i class="ion-android-checkmark-circle"></i>Video</a></li>
-                                </ul> 
-                            </div> 
-                            
-                           
-                            
-                            <div class="mt20 mb20"> 
-                                <ul class="list-inline">
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li> 
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li> 
-                                </ul> 
-                            </div>   
-                            
-                            
-                        </div>
-                        End Sidebar -->
+                      
                         
                     </div>
                 </div>
