@@ -1,0 +1,1420 @@
+* {
+    font-family: Arial, sans-serif;
+
+}
+
+* ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+* a {
+    text-decoration: none;
+    color: #555;
+}
+
+* input {
+    width: 98%;
+    padding: 0.5% 1%;
+    float: left;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+* h1 {
+    font-size: 16px;
+    float: left;
+    color: #555;
+    width: 100%;
+}
+
+body {
+    background: #eee;
+
+}
+.tik {
+    width:100%;
+    float:left;
+    font-size:14px;
+}
+.tik td {
+    border-bottom:1px solid #ddd;
+    border-right:1px solid #ddd;
+    padding:10px;
+}
+
+.sol {
+    float: left;
+    margin: 0;
+    background: #fff;
+    width: calc(70%);
+    padding: 1%;
+    margin-left: 15%;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #ddd;
+    height: 40px;
+}
+
+.sol ul {
+    float: right;
+    margin-top: -3px;
+}
+
+.sol li {
+    float: left;
+    margin-right: 15px;
+}
+
+.sol li a {
+    float: left;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: bold;
+    color: #555;
+    transition: all 0.3s;
+}
+
+.sol li a:hover {
+    opacity: 0.5;
+
+}
+
+.sol img {
+    float: left;
+    width: 200px;
+    margin-top: -3px;
+
+}
+
+.orta {
+    width: 70%;
+    padding: 1%;
+    height: auto;
+    background: #fff;
+    float: left;
+    margin-left: 15%;
+    margin-top: 10px;
+    box-shadow: 0 0 3px #ddd;
+    margin-bottom: 10px;
+}
+
+.orta table.uye {
+    font-size: 85%;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.orta table.uye td {
+    padding: 10px;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+.orta table.uye td:first-child {
+    border-left: none;
+}
+
+.box {
+    width: 49%;
+    float: left;
+    margin-right: 1%;
+}
+
+.box:last-child {
+    margin-right: 0;
+}
+
+.hesap {
+    float: left;
+    width: 100%;
+    font-size: 14px;
+}
+
+.hesap table {
+    float: left;
+}
+
+.hesap .sec {
+    height: 180px;
+
+}
+
+.box a {
+    box-shadow: 0 0 3px #ddd;
+    float: left;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.box a:hover {
+    background: #294a57;
+    color: #fff;
+}
+
+.box i {
+    margin-top: 20px;
+    font-size: 300%;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.box p {
+    float: left;
+    width: 100%;
+    font-size: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.yeniuyeler {
+    float: left;
+    width: 100%;
+    padding: 1%;
+    box-shadow: 0 0 3px #ddd;
+    margin-top: 10px;
+    font-size: 14px;
+
+}
+
+.yeniuyeler h1 {
+    font-size: 120%;
+    float: left;
+    color: #555;
+    width: 100%;
+}
+
+.uyeler {
+    float: left;
+    width: 100%;
+    margin-top:20px;
+}
+
+.uyeler h1 {
+    font-size: 120%;
+    float: left;
+    color: #555;
+    width: 100%;
+}
+
+.uyeler a {
+    width: 100%;
+    display: contents;
+    float: left;
+}
+
+.uyeler a:hover {
+    color: #222;
+}
+
+.yeniuyeler p {
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding: 10px 0;
+    float: left;
+}
+
+.yeniuyeler span {
+    float: left;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+
+.yenitable {
+    float: left;
+    display: table;
+    width: 100%;
+    color: #555;
+    font-size: 14px;
+    overflow-x: auto;
+}
+
+.yenitable ul {
+    display: table-row;
+
+}
+
+.yenitable ul li {
+    display: table-cell;
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+}
+
+.gelenuye {
+    padding: 0 1%;
+    float: left;
+    display: table;
+    width: 98%;
+    color: #555;
+    background: #eee;
+    box-shadow: 0 0 3px #ddd;
+    height: auto;
+}
+
+.gelenuye a {
+    width: 100%;
+    display: contents;
+    float: left;
+}
+
+.gelenuye ul {
+    display: table-row-group;
+
+}
+
+.gelenuye li {
+    display: table-cell;
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+}
+
+.bakiye {
+    float: left;
+    width: calc(100% - 40px);
+    padding: 15px;
+
+    box-shadow: 0 0 3px #ddd;
+    margin-top: 10px;
+}
+
+.bakiye input {
+    width: 98%;
+    padding: 1%;
+    float: left;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.bakiye span {
+    width: 3%;
+    margin-left: -7%;
+    padding: 1%;
+    float: left;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.bakiye a {
+    display: block;
+    float: left;
+    width: 49%;
+    margin-left: 0.5%;
+    margin-top: 10px;
+    border-radius: 3px;
+    background: #6bb1ff;
+    padding: 10px 0;
+    text-align: center;
+    color: #f8f8f8;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.bakiye a:last-child {
+    background: #ce0001;
+}
+
+.bakiye a:hover {
+    opacity: 0.8;
+}
+
+.yeni {
+    float: left;
+    width: 100%;
+}
+
+.kategoriler {
+    float: left;
+    width: 47%;
+    padding: 1%;
+    margin-right: 1%;
+    box-shadow: 0 0 3px #ddd;
+    margin-top: 10px;
+}
+
+.kategoriler a {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    background: #47c06c;
+    margin-top: 10px;
+    border-radius: 5px !important;
+    box-shadow: 0 0 2px #ccc;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.kategoriler span {
+    float: left;
+    padding: 5px 0;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.disabled {
+    float: left;
+    width: 100%;
+    cursor: pointer;
+    display: block;
+}
+
+.tablo {
+    color: #55141a;
+    float: left;
+    width: 100%;
+    height: 100%;
+
+}
+
+.tablo table {
+    font-size: 12px;
+    overflow-x: auto;
+}
+
+.tablo a {
+    margin: 0;
+    border-radius: 0;
+    padding: 5px 3px;
+}
+
+.tabbas td {
+    color: #fff;
+    font-weight: bold;
+    background: #53828e;
+}
+
+.tabbas td {
+    padding: 20px 10px !important;
+}
+
+.tablo td {
+    padding: 10px;
+    /*border-left:1px solid #ddd;*/
+    border-bottom: 1px solid #ddd;
+}
+
+.katduzenle {
+    display: none;
+}
+
+.servisekle select {
+    float: left;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px 0;
+    text-indent: 5px;
+}
+
+.servisekle input {
+    width: calc(100% - 30px);
+    padding: 15px;
+}
+
+.servisekle textarea {
+    width: calc(100% - 30px);
+    padding: 15px;
+}
+
+#aciklama {
+    float: left;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+.kategori {
+    width: 98%;
+}
+
+.servis {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    float: left;
+}
+
+.serduz {
+    display: none;
+}
+
+.serduz input {
+    width: calc(100% - 33px);
+    padding: 15px;
+    margin: 0;
+}
+
+.serduz textarea {
+    float: left;
+    width: calc(100% - 33px);
+    padding: 15px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+.serduz label {
+    float: left;
+    margin-top: 10px;
+    color: #555;
+}
+
+.sec {
+    float: left;
+    width: 47%;
+    padding: 1%;
+    height: 160px;
+    margin-right: 1%;
+    box-shadow: 0 0 3px #ccc;
+    font-size: 14px;
+
+}
+.uyetop {
+    width:100%;
+    padding-bottom:0;
+    color:#555;
+}
+
+.sec:last-child {
+    margin-right: 0;
+}
+
+.sec p, .sec b {
+    float: left;
+}
+
+.sec h1 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+.ode {
+    width:100% !important;
+}
+.sec input {
+    float: left;
+    width: 47%;
+    margin-right: 0.5%;
+}
+
+.sec input:last-child {
+    margin-right: 0;
+}
+
+.sec table {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+
+.sec a {
+    float: left;
+    background: #3b9c55;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sec table td {
+    padding: 1%;
+    width: 50%;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.sec table td:last-child {
+    border-right: none;
+}
+
+.tumis {
+    float: left;
+    width: 100%;
+
+}
+
+.tumis table {
+    width: 100%;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+
+}
+
+.tumis td {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.servisliste {
+    font-size: 14px;
+    width: 100%;
+    display: none;
+    float: left;
+}
+
+.servisliste select {
+    width: 100%;
+    float: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.servisliste option {
+    float: left;
+    padding: 10px 0;
+}
+
+.servisliste input {
+    margin: 0;
+}
+
+.servisliste label {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.servisliste a {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background: #2c4b6b;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.otolar {
+    font-size: 14px;
+    float: left;
+    width: 100%;
+    color: #666;
+    margin-top: 10px;
+}
+
+.otolar table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    border-right: 0;
+}
+
+.otolar table {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.otoduzenle {
+    display: none;
+    float: left;
+    width: 100%;
+}
+
+.otoduzenle input {
+    margin: 0;
+}
+
+.otoduzenle label {
+    width: 100%;
+    float: left;
+    padding: 15px 0 5px;
+}
+
+.otoduzenle a {
+    float: left;
+    width: 100%;
+    background: #2f2f2f;
+    color: #f5f5f5;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+#yeniekle {
+    position: absolute;
+    top: 10px;
+    right: 250px;
+    background: #2f2f2f;
+    color: #fff;
+    padding: 10px;
+}
+
+.sms {
+    float: left;
+    width: calc(100% - 40px);
+    padding: 15px;
+    box-shadow: 0 0 3px #ddd;
+    margin-top: 10px;
+}
+
+.sms textarea {
+    width: calc(100% - 20px);
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.sms a {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+    text-align: center;
+    background: #3b9c55;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.sms a:hover {
+    opacity: 0.8;
+}
+
+.duyuruekle a {
+    background: #444 !important;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.duyek {
+    float: left;
+    margin-top: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    display: none;
+}
+
+.duyek input {
+    padding: 10px;
+    color: #555;
+    font-size: 14px;
+}
+
+.duyek textarea {
+    width: calc(100% - 20px);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #555;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.duyek a {
+    float: left;
+    width: calc(100% - 40px);
+    background: #3b9c55 !important;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.duyuru {
+    float: left;
+    width: calc(100% - 40px);
+    padding: 15px;
+    box-shadow: 0 0 3px #ddd;
+    margin-top: 10px;
+    position: relative;
+
+}
+
+.duyuru span {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    position: relative;
+}
+
+.duyuru h2 {
+    color: #555;
+    width: 90%;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.duyuru p {
+    width: 90%;
+    float: left;
+    color: #666;
+    font-size: 14px;
+}
+
+.gur {
+
+    float: left;
+    width: 90%;
+    position: relative;
+}
+
+.duyuru #tarih {
+    position: absolute;
+    width: auto;
+    right: 0;
+    border: 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.duyuru a {
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px #ddd;
+    padding: 10px 20px;
+    background: #fb3d30;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    float: right;
+}
+
+.grup {
+    float: left;
+    width: calc(100% - 5px);
+}
+
+.icerik {
+    float: left;
+    width: 100%;
+}
+
+.icerik ul li a {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    transition: all 0.5s;
+}
+
+.icerik ul li a:hover {
+    background: #eee;
+    padding: 10px 10px;
+    width: calc(100% - 20px);
+}
+
+.icerikler h2 {
+    float: left;
+    font-size: 18px;
+    color: #555;
+}
+
+.icerikduzenle {
+    float: left;
+    width: 100%;
+    position: relative;
+
+}
+
+.edit {
+    float: left;
+    width: 100%;
+    display: block;
+    position: relative;
+
+}
+
+.icerikduzenle input {
+    margin: 0;
+
+}
+
+.icerikler label {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.icerikler textarea {
+    float: left;
+    width: calc(100% - 30px);
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+
+}
+
+#icerikkaydet, #icerikekle {
+    float: left;
+    width: calc(100% - 20px);
+    padding: 10px;
+    background: #3b9c55;
+    color: #eee;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+.icerikler a:hover {
+    opacity: 0.8;
+}
+
+#ekle {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    background: #dddddd;
+    padding: 15px;
+    color: #666;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#ekle:hover {
+    opacity: 0.7;
+}
+
+.icerikekle, .icerikduzenle {
+    display: none;
+}
+
+.pekle {
+    float: left;
+    width: 100%;
+    margin-top:20px;
+    border-top:1px solid #ddd;
+    padding-top:20px;
+}
+
+.pekle label {
+    width: 100%;
+    float: left;
+}
+
+.pekle a {
+    width: calc(100% - 20px);
+    display: block;
+    float: left;
+    background: #aaa;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 0 5px #ddd;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.pekle a:hover {
+    background: #555;
+
+}
+
+.pekle input {
+    float: left;
+    width: 50%;
+}
+
+.pekle select {
+    width: 46%;
+    margin-left: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 6px;
+    margin-top: 10px;
+}
+
+.paketler tr:first-child td {
+    background: #777;
+    color: #fff;
+
+}
+.paketler h1{
+    margin-top:30px;
+}
+.paketler td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.paketler td a {
+    border: 1px solid #eee;
+    padding: 5px 10px;
+}
+
+.pakets {
+    width: 100%;
+    float: left;
+    margin-top:40px;
+    margin-bottom: 10px;
+}
+
+.pa {
+    background: #f5f5f5;
+    float: left;
+    width: calc(100% - 25px);
+    margin-right: 25px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 5px #ccc;
+
+}
+
+.eklep {
+    display:none;
+    float: left;
+    width:100%;
+    margin-top:20px;
+    border-top:1px solid #ddd;
+
+}
+.eklep h4 {
+    float:left;
+    width:100%;
+    font-size:14px;
+    margin:0;
+    margin-top:20px;
+    color:#555;
+}
+.eklep a {
+    float:left;
+    width:100%;
+    text-align: center;
+    color:#fff;
+    font-weight:bold;
+    background:#777;
+    padding:10px 0;
+    margin-top:5px;
+
+}
+.pa h4 {
+    color: #555;
+    font-size: 14px;
+}
+
+.pa p {
+    color: #555;
+    font-size: 14px;
+}
+
+.pa a {
+    float: left;
+    width: 100%;
+    background: #505050;
+    text-align: center;
+    padding: 10px 0;
+    color:#fff;
+    border-radius:10px;
+    font-size: 14px;
+    margin-bottom:50px;
+    margin-top:10px;
+
+}
+.pa span {
+    cursor:pointer;
+}
+.pa table {
+
+    width:100%;
+    float:left;
+    font-size:14px;
+    color:#555;
+    text-align: left;
+}
+.pa table td {
+    border-top:1px solid #ddd;
+    padding:10px;
+}
+.ara {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.ara input {
+    float: left;
+    width: calc(100% - 45px);
+    padding: 15px;
+    margin: 0;
+}
+
+.ara span {
+    float: left;
+    width: calc(100% - 15px);
+    background: #eee;
+}
+
+.ara p {
+    float: left;
+    padding: 10px;
+}
+
+table.arama {
+    font-size: 12px;
+}
+
+.arama tr td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.arama tr:last-child td {
+    border: 0;
+}
+
+.respons {
+    position: fixed;
+    top: 10px;
+    right: 50px;
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+.uyeoto {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    color: #666;
+    overflow-x: auto;
+}
+
+.uyeoto tr:first-child td {
+    padding: 15px;
+    background: #53828e;
+    color: #fff;
+    font-weight: bold;
+}
+
+.uyeoto td {
+    padding: 15px;
+}
+
+.uyeoto tr:nth-child(odd) {
+    background: #f5f5f5;
+}
+
+.servisduzenle {
+    display: none;
+}
+
+#serkay {
+    float: left;
+    background: #eee;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+
+}
+
+#adoduz {
+    background: #dd4033;
+}
+
+.tabss {
+    float:left;
+    width:100%;
+    margin-top:10px;
+}
+.tabss a {
+    float:left;
+    padding:10px;
+    background:#eee;
+    margin-right:10px;
+}
+
+/*--------------------------------------------------RESPON--------------------------------------*/
+@media only screen and (min-width: 1301px) and (max-width: 1600px) {
+    .sol {
+        width: 80%;
+        margin-left: 10%;
+        font-size: 14px;
+    }
+
+    .orta {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #yeniekle {
+        right: 10px;
+        top: 10px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1300px) {
+    .sol {
+        width: calc(90% - 30px);
+        margin-left: 5%;
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .sol li a {
+        display: none;
+    }
+
+    .sol img {
+        margin-top: -5px;
+    }
+
+    .orta {
+        padding: 15px;
+        width: calc(90% - 30px);
+        margin-left: 5%;
+    }
+
+    .bakiye a {
+        width: 100%;
+    }
+
+    .bakiye input {
+        width: calc(100% - 30px);
+        padding: 15px;
+    }
+
+    .uyeara input {
+        padding: 15px;
+        width: calc(100% - 30px);
+        margin-bottom: 10px;
+
+    }
+
+    .katekle input {
+        width: calc(100% - 30px);
+        padding: 15px;
+    }
+
+    .sec {
+        width: calc(100%);
+        box-shadow: none;
+        padding: 0;
+
+    }
+
+    .kategori input {
+        width: calc(100% - 30px);
+        padding: 15px;
+    }
+
+    .ara {
+        width: calc(100%);
+
+        margin: 0;
+    }
+
+    .ara input {
+        width: calc(100% - 30px);
+        padding: 15px;
+    }
+
+    .tumis {
+        width: 100%;
+        float: left;
+    }
+
+    .otolar {
+        width: calc(100% - 30px);
+        padding: 0 15px;
+    }
+
+    ul.res {
+
+        z-index: 1;
+        position: relative;
+        background: rgba(0, 0, 0, 0.6);
+        margin: 0;
+        width: calc(100% - 30px);
+        text-align: right;
+        padding: 0 15px;
+        margin-top: 10px;
+
+    }
+
+    ul.res li {
+        width: 100%;
+
+    }
+
+    ul.res li a {
+        float: left;
+        width: 100%;
+        color: #fff;
+
+    }
+
+    .respons {
+        display: block;
+    }
+
+    #ekle {
+        top: 20px;
+        right: 120px;
+    }
+
+    .respons {
+        top: 18px;
+        right: 80px;
+    }
+
+    #yeniekle {
+        top: 23px;
+        right: 140px;
+    }
+
+    .servisliste {
+
+        padding: 15px;
+        width: calc(100% - 30px);
+    }
+
+    .servisliste input {
+        padding: 15px;
+        width: calc(100% - 30px);
+    }
+
+    .servisliste select {
+        padding: 15px;
+        width: calc(100%);
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .gur {
+        width: 100%;
+    }
+
+    .duyuru a {
+        width: calc(100% - 40px);
+        float: left;
+        text-align: center;
+        font-weight: normal;
+        font-size: 12px;
+    }
+
+    .otolar {
+        margin-left: 2.5%;
+        width: 95%;
+        font-size: 10px;
+    }
+
+    .respons {
+        top: 15px;
+        right: 30px;
+    }
+
+    #ekle {
+        right: 90px;
+    }
+
+    #yeniekle {
+        top: 20px;
+        right: 70px;
+    }
+
+    .sec {
+        float: left;
+        width: calc(100%);
+        padding: 0px;
+        height: auto;
+        box-shadow: none;
+        margin-bottom: 10px;
+    }
+
+    .sec input {
+        width: calc(100% - 30px);
+        padding: 10px 15px;
+        float: left;
+    }
+
+    .servisliste {
+
+        padding: 15px;
+        width: calc(100% - 30px);
+    }
+
+    .servisliste input {
+        padding: 15px;
+        width: calc(100% - 30px);
+    }
+
+    .servisliste select {
+        padding: 15px;
+        width: calc(100%);
+    }
+
+    .sol {
+        width: calc(100% - 30px);
+        margin-left: 0;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .sol img {
+        margin-top: -5px;
+    }
+
+    .sol li a {
+        display: none;
+    }
+
+    .orta {
+        width: calc(100% - 20px);
+        margin-top: 10px;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .katekle input {
+        width: calc(100% - 30px);
+        padding: 15px;
+    }
+
+    .uyeara input {
+        width: calc(100% - 30px);
+        padding: 15px;
+    }
+
+    ul.res {
+        z-index: 1;
+        position: relative;
+        background: rgba(0, 0, 0, 0.6);
+        margin: 0;
+        width: calc(100% - 30px);
+        text-align: right;
+        padding: 0 15px;
+        margin-top: 10px;
+
+    }
+
+    ul.res li {
+        width: 100%;
+
+    }
+
+    ul.res li a {
+        float: left;
+        width: 100%;
+        color: #fff;
+
+    }
+
+    .respons {
+        display: block;
+    }
+
+}
+

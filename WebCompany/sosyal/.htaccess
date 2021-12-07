@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^hizmetler/([0-9a-zA-Z-_]+).html$  hizmetler.php?q=$1 [L,QSA]
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+
+RewriteCond %{HTTP_HOST} ^www\.graptik\.biz$
+RewriteRule ^(.*)$ https://graptik.biz/$1 [L,R=301]

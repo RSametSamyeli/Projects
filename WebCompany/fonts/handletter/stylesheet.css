@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'handletter';
+    src: url('handletter_1-webfont.eot');
+    src: url('handletter_1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('handletter_1-webfont.woff2') format('woff2'),
+         url('handletter_1-webfont.woff') format('woff'),
+         url('handletter_1-webfont.ttf') format('truetype'),
+         url('handletter_1-webfont.svg#handletterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

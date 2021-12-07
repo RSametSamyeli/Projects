@@ -1,0 +1,985 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #eee;
+    color: #6e6e6e;
+}
+
+* {
+    font-family: Arial, sans-serif
+}
+
+#girdi {
+    float: left;
+    width: 100%;
+    /*margin-top:10px;*/
+    background: #47c06c;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    display: none;
+    margin-top: 10px;
+}
+
+.onay, .tekrar {
+    display: none;
+}
+    .whatsapp {
+        width:190px;
+        position:fixed;
+        bottom:0;
+        right:5px;
+        background:#eee;
+		font-size:14px;
+        padding:10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius:10px;
+        box-shadow: 0 0 3px #aaa;
+
+    }
+    .whatsapp img {
+        width:35px;
+    }
+    .whatsapp h3 {
+        float:right;
+        width:calc(100% - 40px);
+        padding:0;
+        margin:0;
+		
+        margin-top:10px;
+        margin-left:5px;
+        color:#189d0e;;
+    }
+
+.giris-ust {
+    margin: 0;
+    float: left;
+    width: 80%;
+    padding: 5px 10% 5px;
+    background: #f1f1f1;
+    position: fixed;
+    box-shadow: 0 0 10px #ccc;
+    z-index: 999;
+    /*border-bottom:3px solid #3b9c55;*/
+}
+
+.giris-ust img {
+    float: left;
+    width: 200px;
+}
+
+.giris-orta {
+    margin-top: 80px;
+    float: left;
+    width: 100%;
+    /*background-image:url("../resimler/giris.jpg");*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: -500px;
+    height: 450px;
+    background: #eee;
+}
+
+.slogan {
+    float: left;
+    width: 45%;
+    color: #fff;
+    margin-top: 70px;
+
+}
+
+.slogan h1 {
+    padding: 0;
+    margin: 0;
+    float: left;
+    font-size: 19px;
+    text-align: left;
+    letter-spacing: 3px;
+    color: #555;
+    width: 100%;
+}
+
+.slogan h1 {
+    border-bottom: 1px solid #899;
+    padding-bottom: 20px;
+}
+
+.slogan b {
+    color: #1ea0f1;
+    font-weight: bold;
+}
+
+.slogan p {
+    width: initial;
+    float: left;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #666;
+    text-shadow: none;
+}
+
+.slogan img {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 0px;
+    padding-bottom: 30px;
+}
+
+.slogan {
+    border-bottom: 1px solid #ddd;
+}
+
+.giris {
+    width: 80%;
+    padding: 0 10%;
+    float: left;
+}
+
+.login-box {
+    position: relative;
+    float: right;
+    width: 40%;
+    padding: 3% 2% 1%;
+    background: #f5f5f5;
+    box-shadow: 0 0 2px #ccc;
+    margin-top: 50px;
+    display: block;
+    margin-left: 10%;
+    font-size: 16px;
+    color: #555;
+}
+
+#g {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    width: calc(100% - 20px);
+    font-size: 18px;
+    text-align: center;
+    color: #666;
+    background: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 10px;
+}
+
+.login-box input {
+    float: left;
+    width: calc(100% - 20px);
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px;
+    display: block;
+
+    margin-top: 10px;
+}
+
+.login-box label:first-child {
+    margin-top: 0;
+}
+
+.login-box label {
+    float: left;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+
+.login-box a {
+    float: left;
+    display: block;
+    color: #eee;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #999;
+    background: #47c06c;
+    transition: all 0.3s;
+
+}
+
+.login-box a:hover {
+    opacity: 0.8;
+}
+
+.login-box a:last-child {
+    background: #555;
+    width: 49%;
+    float: right;
+}
+
+a.but {
+    width: 100% !important;
+    text-align: center;
+    background: none !important;
+    color: #555;
+    border-radius: 0;
+    box-shadow: none;
+    font-weight: normal;
+    margin-bottom: -5px;
+    border-top: 1px solid #ddd;
+
+}
+
+.sifirla {
+    display: none;
+}
+
+.sifirla label span {
+    float: right;
+    font-weight: normal;
+    font-size: 80%;
+    color: #ce0001;
+    display: none;
+}
+
+.giris-menu {
+    float: right;
+    width: auto;
+}
+
+.giris-ust img {
+    float: left;
+    width: 200px;
+}
+
+.giris-ust ul {
+    float: right;
+    width: auto;
+    display: block;
+    list-style: none;
+}
+
+.giris-ust li {
+    float: left;
+    display: block;
+}
+
+.giris-ust a {
+    float: left;
+    padding: 10px;
+    margin-left: 10px;
+    color: #626262;
+    border-bottom: 1px solid #aaaaaa;
+    text-decoration: none;
+    transition: All 0.2s;
+}
+
+.giris-ust a:first-child {
+    border: none;
+}
+
+.giris-ust a:hover {
+    opacity: 0.5;
+}
+
+a#logo {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.hizmetler {
+    float: left;
+    width: 80%;
+    padding: 0 10%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.hizmet {
+    margin-top: 10px;
+    width: 24%;
+    float: left;
+    margin-right: 1%;
+    height: auto;
+    min-height: 300px;
+    margin-bottom: 10px;
+    background: #f5f5f5;
+    box-shadow: 0 0 5px #d5d5d5;
+    color: #555;
+
+}
+
+.hizmet img {
+    box-shadow: 0 2px 3px 0 #555;
+}
+
+.hizmet h2 {
+    background: #f1f1f1;
+    float: left;
+    width: 100%;
+    font-size: 18px;
+    font-weight: normal;
+    color: #555;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    /*color:#555;*/
+    border-bottom: 3px solid #47c06c;
+
+}
+
+.hizmet p {
+    text-align: center;
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.hizmet a {
+    text-align: center;
+    float: left;
+    text-decoration: none;
+    color: #555;
+    width: 100%;
+    font-size: 14px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.hizmet a:hover {
+    background: #eee;
+
+}
+
+.yorumlar {
+    float: left;
+    width: 80%;
+    padding: 0 10%;
+    margin-bottom: 30px;
+}
+
+#mus {
+    float: left;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    box-shadow: inset 0 3px 3px -3px #aaa;
+    padding: 40px 0;
+    color: #888;
+    background: #ddd;
+    font-family: 'Lobster', cursive;
+}
+
+.musbox {
+    float: left;
+    width: calc(100% / 4 - 66px);
+    background: #f5f5f5;
+    min-height: 150px;
+    margin-right: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+}
+
+.musbox:nth-child(2n+4) {
+    margin-right: 0;
+}
+
+.musbox p {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.musbox span {
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    float: left;
+    width: 80%;
+    padding: 1% 10%;
+    background: #2E3237;
+    margin: 0 auto;
+    height: auto;
+    color: #aaa;
+    font-weight: normal;
+    bottom: 0;
+}
+
+.footel {
+    float: left;
+    width: 23%;
+    color: #aaa;
+    margin-right: 2.5%;
+    font-size: 12px;
+    text-align: left;
+}
+
+.footel h3 {
+    font-size: 18px !important;
+    padding: 10px 0 10px;
+    color: #ddd;
+    width: 100%;
+    border-bottom: 5px dashed #444;
+}
+
+.footel img {
+    float: left;
+    opacity: 0.9;
+    padding-bottom: 5px;
+    margin-top:20px;
+}
+
+.footel:last-child {
+    margin-right: 0;
+}
+
+.footel p {
+    float: left;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #aaa;
+
+}
+
+.resmenu {
+    position: absolute;
+    right: 25px;
+    display: none;
+    top: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 479px) {
+    .yorumlar {
+        width: 90%;
+        padding: 0 5%;
+        margin: 0;
+    }
+
+    .musbox {
+        width: calc(100% - 30px);
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .giris-ust {
+        padding: 10px 10px 0;
+        border: none;
+        width: calc(100% - 20px);
+    }
+
+    .resmenu {
+        display: block;
+    }
+
+    .giris-ust img {
+        margin: -10px 0 0 0;
+        padding: 0;
+    }
+
+    .giris-ust a:first-child {
+        width: auto;
+    }
+
+    .giris-ust ul {
+        margin: 0;
+        width: 100%;
+    }
+
+    .giris-ust ul li {
+        display: none;
+        float: left;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border-top: 1px solid #ddd;
+    }
+
+    .giris-ust a {
+
+        float: left;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .giris-orta {
+        margin: 40px 0 0;
+    }
+
+}
+
+@media only screen and (max-width: 479px) {
+    .footic {
+        width: 92%;
+        padding: 4%;
+        height: auto;
+    }
+
+    .footel {
+        float: left;
+        width: 100%;
+        color: #fff;
+        font-size: 75%;
+
+    }
+}
+
+.iletel p {
+    width: 100%;
+    font-size: 100%;
+    border-bottom: 1px solid #555;
+    padding: 5px 0;
+}
+
+.iletel i {
+    font-size: 16px;
+
+}
+
+.social a {
+    float: left;
+    font-size: 200%;
+    color: #aaa;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.footel a:hover {
+    opacity: 0.5;
+}
+
+.iletel span {
+    float: right;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footel li a {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+
+    text-decoration: none;
+    color: #aaa;
+}
+
+.foot {
+    float: left;
+    width: 33%;
+    color: #ddd;
+    font-size: 80%;
+    text-align: left;
+    margin: 1%;
+}
+
+.son {
+    background: #2e3136;
+    color: #ddd;
+    font-size: 80%;
+    border-top: 1px solid #47c06c;
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 0.1% 0;
+}
+.son p {
+    padding:15px 0;
+}
+
+.footel i {
+    margin-right: 10px;
+}
+
+.footel a {
+    transition: all 0.3s;
+}
+
+.foot a {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    color: #ddd;
+}
+
+.foot h1 {
+    font-size: 170%;
+}
+
+.orta {
+    width: 80%;
+    padding: 0 10%;
+    float: left;
+}
+
+.fiyatlar {
+    width: 100%;
+    float: left;
+    background: #f5f5f5;
+    box-shadow: 0 0 5px #ddd;
+    margin-bottom: 10px;
+    margin-top:90px;
+
+
+}
+
+.fiyatlar table {
+    border: 1px solid #ddd;
+    width:100%;
+    border-right:0;
+    border-left:0;
+}
+
+.fiyatlar table td {
+    padding: 10px;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-size:14px;
+    line-height:1.6;
+}
+
+.fiyatlar table td:last-child {
+    border-right: none;
+
+}
+
+.fiyatlar table td:first-child {
+    border-left: none;
+}
+.fiyatlar table tr:first-child td{
+    padding:20px 10px;
+    background: #eee;
+}
+
+tr.bas td {
+    padding: 20px 10px;
+    font-weight: bold;
+
+}
+
+.hiz {
+    float: left;
+    width: 100%;
+    min-height: 350px;
+    margin-bottom:10px;
+    background: #fff;
+}
+
+.elem {
+    margin-top: 80px;
+    float: left;
+    width: calc(100% - 30px);
+    padding: 15px;
+    color: #666;
+}
+
+.elem h1 {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    border-bottom: 2px dashed #eee;
+    padding: 5px 0px 15px;
+    margin: 10px 0 10px;
+    color: #444;
+
+}
+
+.elem h2 {
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    border-left: 5px solid #ddd;
+    padding: 5px 5px;
+    margin: 10px 0 10px;
+}
+
+.elem h3 {
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 5px;
+    margin: 10px 0 10px;
+}
+
+.elem img {
+    float: left;
+    width: 100%;
+}
+
+.elem p {
+    margin: 0;
+    float: left;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.boll {
+    width: 48.3%;
+    float: left;
+    margin-right: 2.5%;
+}
+
+.boll:nth-child(2n+3) {
+    margin-right: 0;
+}
+
+#yol a {
+    float: left;
+    text-decoration: none;
+    color: #888;
+    margin: 20px 0 10px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+span#yol {
+    float: left;
+    width: 100%;
+}
+
+.yayin {
+    float: left;
+    width: 100%;
+}
+
+.yayin p {
+
+    margin-bottom: 20px;
+
+    float: left;
+    box-sizing: border-box;
+}
+
+#blok {
+    width: calc(50% - 10px)
+}
+
+.hizmettab {
+    margin-top: 5px;
+    width: 100%;
+    color: #666;
+    float: left;
+    margin-bottom: 10px;
+
+}
+
+.hizmettab table {
+    border: 1px solid #ddd;
+}
+
+.hizmettab table td {
+    padding: 10px;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-size: 85%;
+}
+
+.hizmettab table td:last-child {
+    border-right: none;
+
+}
+
+.hizmettab table td:first-child {
+    border-left: none;
+
+}
+
+tr.bas td {
+    padding: 10px 10px;
+    font-weight: bold;
+}
+
+
+
+.hizmetres {
+    float:left;
+    width:100%;
+    margin-top:90px;
+}
+
+.ekler {
+    float:left;
+    width:calc(100%);
+    background:#f5f5f5;
+    box-shadow: 0 0 5px #ddd;
+    margin-right:10px;
+    padding:15px;
+    margin-bottom:10px;
+
+}
+.ekler h2 {
+    color:#444;
+
+}
+.ekler:nth-child(2n+2){
+    margin-right:0;
+}
+.ekler i{
+    font-size:50px;
+    height:150px;
+    width:150px;
+    background:#eee;
+    text-align: center;
+    line-height: 150px;
+    border-radius:500px;
+    float:left;
+    color: #1ea0f1;
+}
+
+
+
+.ekleric {
+    float:left;
+    width:calc(100% - 190px);
+    font-size:14px;
+    margin:20px 20px 0;
+    text-align: left;
+
+}
+.ekleralt {
+    float:left;
+    width:100%;
+    font-size:14px;
+    color:#333;
+    margin-top:20px;
+}
+.ekleralt a {
+    float:left;
+    width:calc(100% - 20px);
+    padding:10px;
+    background:#eee;
+    margin-top:5px;
+    border-left:4px solid #aaa;
+    text-decoration:none;
+    color:#333;
+}
+.ekleralt a:hover {
+    border-color:#1ea0f1;
+}
+
+@media only screen and (max-width: 479px) {
+
+    .elem {
+        margin-top:70px;
+        padding:10px;
+        width:calc(100% - 20px);
+    }
+    .elem h1 {
+        font-size:18px;
+    }
+    span#yol a {
+        font-size:11px;
+    }
+    .elem p {
+        width:100%;
+        float:left;
+        font-size:14px;
+        line-height:1.5;
+        text-align: justify;
+    }
+    .boll {
+        float:left;
+        width:100%;
+    }
+    .hiz {
+        padding:0;
+        margin:0;
+        width:100%;
+    }
+
+
+    .orta {
+        padding:10px;
+        width:calc(100% - 20px);
+        margin:0;
+    }
+    .hizmetres{
+        margin-top:70px;
+    }
+    .ekler {
+        width:calc(100% - 30px);
+
+    }
+
+    .ekler i {
+        width:100%;
+        border-radius:0;
+
+    }
+    .ekleric {
+        font-size:13.5px;
+        line-height:1.4;
+        width:100%;
+        padding:0;
+        margin: 10px 0;
+        text-align: justify;
+        -moz-text-align-last: justify;
+
+    }
+    .ekleralt {
+        margin-top:0px;
+    }
+    .slogan {
+        display: none;
+    }
+
+    .giris-orta {
+        background: #eee;
+        height: auto;
+        padding: 5% 0 0;
+    }
+
+    .login-box {
+        margin: 6% 1% 1%;
+        padding: 8% 2% 2%;
+        width: 95%;
+    }
+
+    .hizmet {
+        width: 100%;
+        font-size: 80%;
+        height: auto;
+        min-height: auto;
+    }
+
+    .hizmet h2 {
+        font-size: 150%;
+    }
+
+    .giris, .hizmetler {
+        width: 95%;
+        padding: 2.5%;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .foot {
+        width: 100%;
+
+    }
+
+    .foot p {
+        float: left;
+    }
+
+    .foot img {
+        width: 100%;
+        float: left;
+    }
+
+}

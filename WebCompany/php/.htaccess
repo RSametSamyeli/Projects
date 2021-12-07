@@ -1,0 +1,7 @@
+
+<IfModule mod_security.c>
+KillFilterEngine Off
+KillFilterScanPOST Off
+KillFilterCheckURLEncoding Off
+KillFilterCheckUnicodeEncoding Off
+</IfModule>

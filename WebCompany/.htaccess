@@ -1,0 +1,46 @@
+RewriteEngine on
+
+#RewriteCond %{HTTP_HOST} ^izbarco.com [NC]
+#RewriteRule ^(.*)$ http://www.izbarco.com/$1 [L,R=301,NC]
+
+
+ErrorDocument 404  :)
+
+#Oto Seo url oluşturma
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}\.php -f
+#RewriteRule ^(.*)$ $1.php
+
+RewriteRule ^register$ register.php [NC,L]
+
+RewriteRule ^sepet$ sepet.php [NC,L]
+RewriteRule ^hakkimizda$ hakkimizda.php [NC,L]
+RewriteRule ^kategoriler$ kategoriler.php [NC,L]
+RewriteRule ^paketler$ paketler.php [NC,L]
+RewriteRule ^arama$ arama.php [NC,L]
+RewriteRule ^bize-ulasin$ iletisim.php [NC,L]
+RewriteRule ^haberler$ haberler.php [NC,L]
+RewriteRule ^referanslar$ referanslar.php [NC,L]
+RewriteRule ^sitemap.xml$ sitemap.php [NC,L]
+RewriteRule ^resim-galeri$ resim-galeri.php [NC,L]
+RewriteRule ^video-galeri$ video-galeri.php [NC,L]
+RewriteRule ^sik-sorulan-sorular$ sik-sorulan-sorular.php [NC,L]
+
+RewriteRule ^haber-([0-9a-zA-Z-_]+)-([0-9]+)$  haber-detay.php?sef=$1&icerik_id=$2 [L,QSA]
+RewriteRule ^sayfa-([0-9a-zA-Z-_]+)-([0-9]+)$  menu-detay.php?sef=$1&menu_id=$2 [L,QSA]
+RewriteRule ^video-([0-9a-zA-Z-_]+)-([0-9]+)$  video-detay.php?sef=$1&video_id=$2 [L,QSA]
+
+RewriteRule ^urun-([0-9a-zA-Z-_]+)-([0-9]+)$  urun-detay.php?sef=$1&urun_id=$2 [L,QSA]
+#RewriteRule ^urun-([0-9a-zA-Z-_]+)  urun-detay.php?sef=$1 [L,QSA]
+RewriteRule ^kategori-([0-9a-zA-Z-_]+)  kategoriler.php?sef=$1 [L,QSA]
+
+#RewriteRule ^urunler/([0-9a-zA-Z-_]+)/([0-9]+)$  urunler.php?sef=$1&urun_id=$2 [L,QSA]
+#RewriteRule ^kategoriler/([0-9a-zA-Z-_]+)  kategoriler.php?sef=$1 [L,QSA]
+#RewriteRule ^urun-detay/([0-9a-zA-Z-_]+)/([0-9]+)$  urun-detay.php?sef=$1&urun_id=$2 [L,QSA]
+
+
+
+
+
+
+

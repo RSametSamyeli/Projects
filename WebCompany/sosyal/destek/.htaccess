@@ -1,0 +1,9 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^destek\.graptik\.biz$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.destek\.graptik\.biz$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^/?$ "https\:\/\/wa\.me\/902423265810\?text\=Merhaba\,\%20hizmetleriniz\%20hakk\Ä\±nda\%20bilgi\%20almak\%20istiyorum" [R=301,L]
+

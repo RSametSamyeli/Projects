@@ -1,0 +1,10 @@
+User-agent: * 
+Disallow: /panel
+Disallow: /panel/app
+Disallow: /musteri-panel.php
+Disallow: /register.php
+User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: YandexBot
+User-agent: YandexImages
+User-agent: Bingbot
