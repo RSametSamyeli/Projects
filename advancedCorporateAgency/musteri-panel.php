@@ -18,11 +18,6 @@ require_once 'header.php'; ?>
 				            <form action="panel/netting/islem.php" method="POST">
 								<input class="form-email bg-transparent" type="text" name="kullanici_mail" placeholder="E-Posta Adresiniz">
 								<input class="form-password bg-transparent" type="password" name="kullanici_password" placeholder="Şifreniz"> 
-<!--
-                                <div class="actions">
-                                    <a href="#" class="pull-left dark-grey">Forgot Password?</a>
-                                    <a href="#" class="pull-right dark-grey">Login with <i class="fa fa-facebook-official"></i></a>
-                                </div>-->
 
 								<input class="btn btn-primary btn-login" name="kullanicigiris" type="submit" value="Giriş Yap">
 				            </form>  
