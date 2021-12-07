@@ -1,0 +1,233 @@
+/*------------------------------------------------------------------
+[Less Zr]
+-------------------------------------------------------------------*/
+
+/*--------------- Base Color --------------*/
+@color:#fff;
+@basecolor:#0f6cb2;
+
+/*--------------- PlaceHolder ---------------*/
+.placeholder-1(@color) {
+    &::-webkit-input-placeholder {
+        color: @color;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 14px;
+    }
+    &:-moz-placeholder {
+        color: @color;
+			font-family: 'Open Sans', sans-serif;
+		font-size: 14px;
+    }
+	&::-moz-placeholder {
+        color: @color;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 14px;
+    }
+	&:-ms-placeholder {
+        color: @color;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 14px;
+    }
+}
+.placeholder-2(@color) {
+    &::-webkit-input-placeholder {
+        color: @color;
+		font-family:Roboto;
+		font-weight:600;
+    }
+    &:-moz-placeholder {
+        color: @color;
+		font-family:Roboto;
+		font-weight:600;
+    }
+	&::-moz-placeholder {
+        color: @color;
+		font-family:Roboto;
+		font-weight:600;
+    }
+	&:-ms-placeholder {
+        color: @color;
+		font-family:Roboto;
+		font-weight:600;
+    }
+}
+.placeholder-3(@color) {
+    &::-webkit-input-placeholder {
+        color: @color;
+		 font-family: 'Raleway';
+		font-weight:600;
+		font-size:14px;
+    }
+    &:-moz-placeholder {
+        color: @color;
+		font-family: 'Raleway';
+		font-weight:600;
+		font-size:14px;
+    }
+	&::-moz-placeholder {
+        color: @color;
+		font-family: 'Raleway';
+		font-weight:600;
+		font-size:14px;
+    }
+	&:-ms-placeholder {
+        color: @color;
+		font-family: 'Raleway';
+		font-weight:600;
+		font-size:14px;
+    }
+}
+/*--------------- Absolute ---------------*/
+.absolute (@left:0,@top:0,@width:100px,@zindex:10){
+	position:absolute;
+	left:@left;
+	top:@top;
+	width:@width;
+	z-index:@zindex;
+}
+/*--------------- Relative ---------------*/
+
+.relative (@left:0,@top:0,@width:100px,@zindex:10){
+	position:relative;
+	left:@left;
+	top:@top;
+	width:@width;
+	z-index:@zindex;
+}
+
+/*------------ Rotate -----------------*/
+
+.rotate(@deg:0){
+	  -ms-transform: rotate(@deg); /* IE 9 */
+    -webkit-transform: rotate(@deg); /* Chrome, Safari, Opera */
+    transform: rotate(@deg);
+}
+/*--------------- Border Radius ---------------*/
+
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+/*--------------- Custom Radius ---------------*/
+
+.border-radius-custom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px) {
+    -webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+    -moz-border-radius: @topleft @topright @bottomright @bottomleft;
+    border-radius: @topleft @topright @bottomright @bottomleft;
+}
+
+/*--------------- Transtion---------------*/
+
+.transition (@prop: all, @time: 0.4s, @ease: linear) {
+    -webkit-transition: @prop @time @ease;
+    -moz-transition: @prop @time @ease;
+    -o-transition: @prop @time @ease;
+    -ms-transition: @prop @time @ease;
+    transition: @prop @time @ease;
+}
+
+
+/*--------------- Origin Transform ---------------*/
+
+.origin (@first:50%,@second:0) {
+	-o-transform-origin:@first @second;
+	-ms-transform-origin:@first @second;
+	-webkit-transform-origin:@first @second;
+	-moz-transform-origin:@first @second;
+	transform-origin:@first @second;
+}
+
+/*--------------- Scale ---------------*/
+.scale(@start:0) {
+	-webkit-transform:scale(@start);
+	-moz-transform:scale(@start);
+	-o-transform:scale(@start);
+	-ms-transform:scale(@start);
+	transform:scale(@start);
+}
+
+/*--------------- Linear Grarient ---------------*/
+
+.gradient (@origin: left, @start: #ffffff, @stop: #000000) {
+    background-color: @start;
+    background-image: -webkit-linear-gradient(@origin, @start, @stop);
+    background-image: -moz-linear-gradient(@origin, @start, @stop);
+    background-image: -o-linear-gradient(@origin, @start, @stop);
+    background-image: -ms-linear-gradient(@origin, @start, @stop);
+    background-image: linear-gradient(@origin, @start, @stop);
+}
+
+/*--------------- Quick Gradient ---------------*/
+.quick-gradient (@origin: left, @alpha: 0.2) {
+    background-color: @basecolor;
+    background-image: -webkit-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: -moz-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: -o-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: -ms-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+}
+
+/*--------------- Box Shadow 1 ---------------*/
+
+.box-shadow-1 (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
+    -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+    -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+    box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+
+/*--------------- Box Shadow 2 ---------------*/
+
+.box-shadow-2(@x: 0px, @y: 15px, @blur: 10px, @alpha: 0.5){
+	position:relative;
+	 &:before,&:after {
+		  z-index: -1;
+		  position: absolute;
+		  content: "";
+		  bottom: 15px;
+		  left: 10px;
+		  width: 50%;
+		  top: 80%;
+		  max-width:300px;
+		  background: #777;
+		  -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+		  -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+		  box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+		  -webkit-transform: rotate(-3deg);
+		  -moz-transform: rotate(-3deg);
+		  -o-transform: rotate(-3deg);
+		  -ms-transform: rotate(-3deg);
+		  transform: rotate(-3deg);
+	 }
+	 &:after{
+		 -webkit-transform: rotate(3deg);
+		  -moz-transform: rotate(3deg);
+		  -o-transform: rotate(3deg);
+		  -ms-transform: rotate(3deg);
+		  transform: rotate(3deg);
+		  right: 10px;
+		  left: auto;
+	 }
+} 
+/*--------------- Box Shadow 3 ---------------*/
+
+.box-shadow-3{
+	position:relative;       
+-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+   -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+		box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+		&:before,&:after {
+			content:"";
+			position:absolute; 
+			z-index:-1;
+			-webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+			-moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+			box-shadow:0 0 20px rgba(0,0,0,0.8);
+			top:50%;
+			bottom:0;
+			left:10px;
+			right:10px;
+			-moz-border-radius:100px / 10px;
+			border-radius:100px / 10px;
+	}
+}

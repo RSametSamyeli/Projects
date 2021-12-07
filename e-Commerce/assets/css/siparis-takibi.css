@@ -1,0 +1,253 @@
+@import "../css/cihaniriboyreset.css";
+/*  İletişim Css */
+/*------------------------------------------------------------------
+[Less Zr]
+-------------------------------------------------------------------*/
+/*--------------- Base Color --------------*/
+/*--------------- PlaceHolder ---------------*/
+/*--------------- Absolute ---------------*/
+/*--------------- Relative ---------------*/
+/*------------ Rotate -----------------*/
+/*--------------- Border Radius ---------------*/
+/*--------------- Custom Radius ---------------*/
+/*--------------- Transtion---------------*/
+/*--------------- Origin Transform ---------------*/
+/*--------------- Scale ---------------*/
+/*--------------- Linear Grarient ---------------*/
+/*--------------- Quick Gradient ---------------*/
+/*--------------- Box Shadow 1 ---------------*/
+/*--------------- Box Shadow 2 ---------------*/
+/*--------------- Box Shadow 3 ---------------*/
+.box-shadow-3 {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.box-shadow-3:before,
+.box-shadow-3:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/* Title */
+.siparis-takibi {
+  width: 100%;
+  float: left;
+  min-height: 600px;
+}
+.siparis-takibi h2 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+  display: block;
+  color: #575757;
+  font-size: 24px;
+  font-weight: 700;
+  border-bottom: 4px solid #eee;
+  margin-bottom: 23px;
+  position: relative;
+}
+.siparis-takibi h2:before {
+  content: '';
+  width: 65px;
+  height: 4px;
+  background: #e31837;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+/* Sipariş TAble */
+.takip-table {
+  margin-bottom: 40px;
+}
+.takip-table table thead th {
+  font-weight: 400;
+  font-size: 14px;
+  background: #f5f5f5;
+  color: #444;
+}
+.takip-table table tbody tr td {
+  font-size: 13px;
+  font-weight: 300;
+}
+.takip-table table tbody tr td span.bekliyor {
+  color: red;
+  font-weight: 600;
+}
+.takip-table table tbody tr td span.onaylandi {
+  color: green;
+  font-weight: 600;
+}
+/* Form */
+.form {
+  width: 100%;
+  float: left;
+  margin-top: 25px;
+}
+.form .form-control-feedback {
+  top: 1px;
+  right: 15px;
+}
+.form .form-group {
+  float: left;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.form .help-block {
+  font-size: 14px;
+  float: left;
+}
+.form .password-progress {
+  margin-top: 15px;
+}
+.form label {
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+  float: left;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.form label em {
+  color: red;
+}
+.form input {
+  border-radius: 0;
+  height: 53px;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #eee;
+  float: left;
+}
+.form input::-webkit-input-placeholder {
+  color: #555555;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.form input:-moz-placeholder {
+  color: #555555;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.form input::-moz-placeholder {
+  color: #555555;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.form input:-ms-placeholder {
+  color: #555555;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.form input:focus {
+  box-shadow: none;
+  border: 1px solid #e31837;
+  background: #fff;
+}
+.form textarea {
+  resize: none;
+  height: 130px;
+}
+.form textarea:focus {
+  box-shadow: none;
+  border: 1px solid #e31837;
+  background: #fff;
+}
+.form .sozlesme {
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+.form .sozlesme input {
+  float: left;
+  height: 18px;
+  width: auto!important;
+  margin-right: 4px;
+  margin-top: 0;
+}
+.form .sozlesme label {
+  font-size: 13px;
+  color: #333;
+  float: left;
+}
+.form .sozlesme a {
+  font-size: 13px;
+  color: #e31837;
+}
+.form .google-capctha {
+  width: 100%;
+  float: left;
+}
+.form .guvenlik-span {
+  width: 100%;
+  float: left;
+  padding: 0 15px;
+}
+.form img.cpth {
+  float: left;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  width: 60%;
+}
+@media screen and (max-width: 768px) {
+  .form img.cpth {
+    width: 50%;
+  }
+}
+.form .form-errors {
+  width: 100%;
+  float: left;
+}
+.form .form-errors span {
+  color: #a94442;
+  background-color: #f2dede;
+  border: 1px solid #a94442!important;
+  padding: 7px 30px;
+  float: left;
+  width: 100%;
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 1px;
+}
+.form .send-form {
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+}
+.form .send-form button {
+  background: #e31837;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 30px!important;
+  width: 100%;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.form .send-form button:hover {
+  background: #333;
+  color: #fff;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}

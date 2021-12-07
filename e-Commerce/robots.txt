@@ -1,0 +1,21 @@
+User-agent: *
+Disallow: /admin
+Disallow: /assets/
+Disallow: /s=/ 
+Disallow: /*?s
+User-agent: Googlebot-Image
+Disallow: /admin
+Disallow: /assets
+Disallow: /*?s
+
+User-agent: Googlebot
+Disallow: /admin
+Disallow: /assets
+Disallow: /*?s
+
+User-agent: AdsBot-Google
+Disallow: /admin
+Disallow: /assets
+Disallow: /*?s
+
+

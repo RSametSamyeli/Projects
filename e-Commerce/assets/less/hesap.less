@@ -1,0 +1,99 @@
+/* Hesap Css */
+@import "def.less";
+
+@xs-min: 480px;
+@sm-min: 768px;
+@md-min: 992px;
+@lg-min: 1200px;
+@zr-tab-max : 959px;
+@xs-max: (@sm-min - 1);
+@sm-max: (@md-min - 1);
+@md-max: (@lg-min - 1);
+
+@phone:          ~"only screen and (max-width: @{xs-min})";
+@phone-strict:   ~"only screen and (min-width: @{xs-min}) and (max-width: @{xs-max})";
+@tablet:         ~"only screen and (min-width: @{sm-min})";
+@tablet-strict:  ~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
+@tablet-max:     ~"only screen and (max-width: @{xs-max})";
+@desktop:        ~"only screen and (min-width: @{md-min})";
+@desktop-strict: ~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
+@large:          ~"only screen and (min-width: @{lg-min})";
+@large-max:      ~"only screen and (max-width: @{lg-min})";
+@zr-respon:      ~"only screen and (max-width: @{zr-tab-max})";	
+
+.title {
+		width:100%;
+		float:left;
+		padding:5px 0;
+		font-family: 'Dosis', sans-serif;
+			h2 {
+				display: block;
+				margin: 0;
+				padding: 0;
+				font-size: 25px;
+				color: #2b2a2a;
+				font-weight: 500;
+				line-height: 30px;
+				margin-bottom: 10px;
+			}
+			span {
+				display: block;
+				font-size: 18px;
+				margin-bottom:5px;
+				font-weight: normal;
+			}
+			p {
+				color: #393737;
+				font-size: 14px;
+				font-weight: normal;
+				line-height: 22px;
+			}
+	}
+	.menuler {
+		width:100%;
+		float:left;
+		min-height:600px;
+		margin-top:30px;
+		ul {
+			li { 
+			 float: left;
+				width: 25%;
+				padding: 0 15px;
+				list-style: none;
+				margin-bottom: 15px;
+				
+				@media screen and(max-width:991px){
+					width:50%;
+				}
+					a {
+						display: block;
+						text-decoration: none;
+						background: #fcfcfc;
+						border: 1px solid #efefef;
+						color: #333333;
+						font-size: 14px;
+						text-align: center;
+						padding: 115px 5px 55px 5px;
+						position: relative;
+						.transition(all,0.3s,linear);
+						&:hover {
+							background:@basecolor;
+							color:#fff;
+						}
+						 i{
+							font-size: 42px;
+							position: absolute;
+							top: 51px;
+							left: 0;
+							width: 100%;
+							text-align: center
+						 }
+						 span {
+							display: block;
+							height: 40px;
+							line-height: 20px;
+						 }
+					}
+			}
+		}
+	}

@@ -1,0 +1,119 @@
+/* Hesap Css */
+/*------------------------------------------------------------------
+[Less Zr]
+-------------------------------------------------------------------*/
+/*--------------- Base Color --------------*/
+/*--------------- PlaceHolder ---------------*/
+/*--------------- Absolute ---------------*/
+/*--------------- Relative ---------------*/
+/*------------ Rotate -----------------*/
+/*--------------- Border Radius ---------------*/
+/*--------------- Custom Radius ---------------*/
+/*--------------- Transtion---------------*/
+/*--------------- Origin Transform ---------------*/
+/*--------------- Scale ---------------*/
+/*--------------- Linear Grarient ---------------*/
+/*--------------- Quick Gradient ---------------*/
+/*--------------- Box Shadow 1 ---------------*/
+/*--------------- Box Shadow 2 ---------------*/
+/*--------------- Box Shadow 3 ---------------*/
+.box-shadow-3 {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.box-shadow-3:before,
+.box-shadow-3:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.title {
+  width: 100%;
+  float: left;
+  padding: 5px 0;
+  font-family: 'Dosis', sans-serif;
+}
+.title h2 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  color: #2b2a2a;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.title span {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+.title p {
+  color: #393737;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px;
+}
+.menuler {
+  width: 100%;
+  float: left;
+  min-height: 600px;
+  margin-top: 30px;
+}
+.menuler ul li {
+  float: left;
+  width: 25%;
+  padding: 0 15px;
+  list-style: none;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 991px) {
+  .menuler ul li {
+    width: 50%;
+  }
+}
+.menuler ul li a {
+  display: block;
+  text-decoration: none;
+  background: #fcfcfc;
+  border: 1px solid #efefef;
+  color: #333333;
+  font-size: 14px;
+  text-align: center;
+  padding: 115px 5px 55px 5px;
+  position: relative;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.menuler ul li a:hover {
+  background: #e31837;
+  color: #fff;
+}
+.menuler ul li a i {
+  font-size: 42px;
+  position: absolute;
+  top: 51px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.menuler ul li a span {
+  display: block;
+  height: 40px;
+  line-height: 20px;
+}

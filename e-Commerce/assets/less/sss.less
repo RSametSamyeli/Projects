@@ -1,0 +1,97 @@
+/*  Sss Css */
+@import "def.less";
+
+@xs-min: 480px;
+@sm-min: 768px;
+@md-min: 992px;
+@lg-min: 1200px;
+@zr-tab-max : 959px;
+@xs-max: (@sm-min - 1);
+@sm-max: (@md-min - 1);
+@md-max: (@lg-min - 1);
+
+@phone:          ~"only screen and (max-width: @{xs-min})";
+@phone-strict:   ~"only screen and (min-width: @{xs-min}) and (max-width: @{xs-max})";
+@tablet:         ~"only screen and (min-width: @{sm-min})";
+@tablet-strict:  ~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
+@tablet-max:     ~"only screen and (max-width: @{xs-max})";
+@desktop:        ~"only screen and (min-width: @{md-min})";
+@desktop-strict: ~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
+@large:          ~"only screen and (min-width: @{lg-min})";
+@large-max:      ~"only screen and (max-width: @{lg-min})";
+@zr-respon:      ~"only screen and (max-width: @{zr-tab-max})";	
+	/* Sss*/
+	.sss-content{
+		width:100%;
+		float:left;
+		margin-top:15px;
+			.page-title{
+				width:100%;
+				float:left;
+					h1 {
+					    margin: 0 0 23px;
+						padding: 0 0 15px;
+						display: block;
+						color: #575757;
+						font-size: 24px;
+						font-weight: 900;
+						border-bottom: 4px solid #eee;
+						position: relative;
+							&:before {
+								    content: '';
+									width: 65px;
+									height: 4px;
+									background: #cd5369;
+									position: absolute;
+									left: 0;
+									bottom: -4px;
+							}
+					}
+			}
+			.panel-opened {
+				background-color:@basecolor;
+				.transition(all,0.2s,linear);
+					h4 {
+						a {
+						.transition(all,0.2s,ease);
+							color:#fff;
+							&:after {
+								position: absolute;
+								right: 0;
+								top: 0;
+								color: #fff!important;
+								.transition(all,0.2s,ease);
+								.rotate(90deg)!important;
+								font-family: fontawesome;
+								content: "\f0da";
+							}
+					}
+				}
+			}
+			.panel-heading{
+			cursor:pointer;
+				h4 {
+						position: relative;
+						width: 100%;
+						.transition(all,0.2s,linear);
+						display: block;
+					a {
+						font-size:16px;
+						&:after {
+								position: absolute;
+								right: 0;
+								top: 0;
+								color: #656565;
+								.transition(all,0.2s,ease);
+								.rotate(0deg);
+								font-family: fontawesome;
+								content: "\f0da";
+						}
+					}
+				}
+			}
+			.panel-body {
+				color:#333;
+				font-size:15px;
+			}
+	}

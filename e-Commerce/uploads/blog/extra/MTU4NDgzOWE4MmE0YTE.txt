@@ -1,0 +1,26 @@
+<?php include("../../../lab/function.php"); if( !defined("SABIT") ){ exit; } ?>
+<?php 
+$yaz = $conn -> query("select * from maillist order by id desc");
+$name = "export-".rand(0,1000)."-".date("d.m.Y");
+if($yaz -> rowCount() > 0) {
+	echo 'No, E-Mail,Tarih';
+	echo "\n";
+	$i = 0;
+	foreach($yaz as $y) {
+		$i++;
+		echo  "".$i.", ".$y['mail'].", ".$y['tarih']."";	
+		echo "\n"; 		
+	}
+	echo "\n"; 
+}?> 
+
+<?php
+header("Content-Type: application/vnd.ms-excel");
+header("Pragma: public");
+header("Expires: 0");
+header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+header("Content-Type: application/force-download");
+header("Content-Type: application/octet-stream");
+header("Content-Type: application/download");;
+header("Content-Disposition: attachment;filename=".$name.".csv ");
+?>

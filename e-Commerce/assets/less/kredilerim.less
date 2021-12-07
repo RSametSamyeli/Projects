@@ -1,0 +1,151 @@
+/* Kuponlarim Css */
+@import "def.less";
+
+@xs-min: 480px;
+@sm-min: 768px;
+@md-min: 992px;
+@lg-min: 1200px;
+@zr-tab-max : 959px;
+@xs-max: (@sm-min - 1);
+@sm-max: (@md-min - 1);
+@md-max: (@lg-min - 1);
+
+@phone:          ~"only screen and (max-width: @{xs-min})";
+@phone-strict:   ~"only screen and (min-width: @{xs-min}) and (max-width: @{xs-max})";
+@tablet:         ~"only screen and (min-width: @{sm-min})";
+@tablet-strict:  ~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
+@tablet-max:     ~"only screen and (max-width: @{xs-max})";
+@desktop:        ~"only screen and (min-width: @{md-min})";
+@desktop-strict: ~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
+@large:          ~"only screen and (min-width: @{lg-min})";
+@large-max:      ~"only screen and (max-width: @{lg-min})";
+@zr-respon:      ~"only screen and (max-width: @{zr-tab-max})";	
+
+.kredilerim {
+	width:100%;
+	float:left;
+	min-height:300px;
+		/* Title */
+		.title {
+			h2 {
+				font-weight: normal;
+				margin: 0;
+				padding: 0;
+				padding-bottom: 15px;
+				display: block;
+				color: #575757;
+				font-size: 24px;
+				font-weight:700;
+				border-bottom: 4px solid #eee;
+				margin-bottom: 23px;
+				position:relative;
+					&:before {
+						content:'';
+						width:65px;
+						height:4px;
+						background:@basecolor;
+						position:absolute;
+						left:0;
+						bottom:-4px;
+					}
+			}
+		}
+		.kredi-tabs {
+			width:100%;
+			float:left;
+			background:#fff;
+			   ul.nav {
+					li.active {
+						a {
+							background:@basecolor;
+							color:#fff;
+						}
+					}
+					li {
+						a {
+							font-size:14px;
+							font-weight:500;
+							color:#000;
+						}
+					}
+			   }
+			   .tab-content {
+					min-height:400px;
+					width:100%;
+					float:left;
+					padding:25px;
+					border-bottom: 1px solid #ddd;
+					border-left: 1px solid #ddd;
+					border-right: 1px solid #ddd;
+						.kredi-table{
+							margin-bottom:40px;
+							table {
+								thead {
+									th {
+									font-weight:400;
+									font-size:14px;	
+									background: #f5f5f5;
+									color:#444;
+									}
+								}
+								tbody {
+									tr {
+										td {
+											font-size:13px;
+											font-weight:300;
+											padding: 8px;
+									 border: 1px solid #ddd;
+									vertical-align: top;
+											span.bekliyor {
+												color:red;
+												font-weight:600;
+											}
+											span.onaylandi {
+												color:green;
+												font-weight:600;
+											}
+										}
+									}
+								}
+							}
+						}
+						.kredi-sonuc {
+							position: relative;
+							background: #fff;
+							margin-top:20px;
+							box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+							margin: 1rem 0;
+							padding: 1em 1em;
+							border-radius: .28571429rem;
+							font-size:14px;
+							border: 1px solid rgba(34,36,38,.15);
+						}
+						.kredi-siparis {
+							width:50%;
+							float:left;
+							font-size:14px;
+								.title {
+									font-weight:600;
+									color:#000;
+									margin-bottom:5px;
+									font-size:14px;
+								}
+								label {
+									font-weight:400;
+									display:block;
+									margin-bottom:10px;
+								}
+								input,select {
+									border-radius:0;
+									height:33px;
+									padding:5px 5px;
+									&:focus {
+										box-shadow:none;
+										border:1px solid @basecolor;
+										background:#fff;
+									}
+								}
+						}
+			   }
+		}
+}

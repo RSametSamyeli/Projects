@@ -1,0 +1,565 @@
+/* Sepetim Css */
+/*------------------------------------------------------------------
+[Less Zr]
+-------------------------------------------------------------------*/
+/*--------------- Base Color --------------*/
+/*--------------- PlaceHolder ---------------*/
+/*--------------- Absolute ---------------*/
+/*--------------- Relative ---------------*/
+/*------------ Rotate -----------------*/
+/*--------------- Border Radius ---------------*/
+/*--------------- Custom Radius ---------------*/
+/*--------------- Transtion---------------*/
+/*--------------- Origin Transform ---------------*/
+/*--------------- Scale ---------------*/
+/*--------------- Linear Grarient ---------------*/
+/*--------------- Quick Gradient ---------------*/
+/*--------------- Box Shadow 1 ---------------*/
+/*--------------- Box Shadow 2 ---------------*/
+/*--------------- Box Shadow 3 ---------------*/
+.box-shadow-3 {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.box-shadow-3:before,
+.box-shadow-3:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/* Üyelik Css */
+.cihaniriboy-uyelik-content {
+  width: 100%;
+  float: left;
+  min-height: 500px;
+  position: relative;
+  background: #fff;
+}
+.cihaniriboy-uyelik-content:before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -5;
+  background: #fcfcfc;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page {
+  width: 100%;
+  float: left;
+  margin-top: 25px;
+  /* Sol */
+  /* Sag */
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol {
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ececec;
+  padding: 20px;
+  min-height: 282px;
+  position: relative;
+  /* Form */
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: -3;
+  left: 0;
+  top: 0;
+  z-index: -4;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .title {
+  width: 100%;
+  float: left;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ececec;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .title h2 {
+  width: 100%;
+  float: left;
+  font-weight: 700;
+  font-size: 19px;
+  color: #333;
+  margin: 0;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form {
+  width: 100%;
+  float: left;
+  margin-top: 25px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form .form-control-feedback {
+  top: 1px;
+  right: 15px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form .form-group {
+  float: left;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form .help-block {
+  font-size: 14px;
+  float: left;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form .password-progress {
+  margin-top: 15px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form label {
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+  float: left;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form label em {
+  color: red;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form input {
+  border-radius: 0;
+  height: 53px;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #eee;
+  float: left;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form input::-webkit-input-placeholder {
+  color: #555555;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form input:-moz-placeholder {
+  color: #555555;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form input::-moz-placeholder {
+  color: #555555;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form input:-ms-placeholder {
+  color: #555555;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form input:focus {
+  box-shadow: none;
+  border: 1px solid #e31837;
+  background: #fff;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form textarea {
+  resize: none;
+  height: 130px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form textarea:focus {
+  box-shadow: none;
+  border: 1px solid #e31837;
+  background: #fff;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form .sozlesme {
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form .sozlesme input {
+  float: left;
+  height: 18px;
+  width: auto!important;
+  margin-right: 4px;
+  margin-top: 0;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form .sozlesme label {
+  font-size: 13px;
+  color: #333;
+  float: left;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form .sozlesme a {
+  font-size: 13px;
+  color: #e31837;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form .google-capctha {
+  width: 100%;
+  float: left;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form .guvenlik-span {
+  width: 100%;
+  float: left;
+  padding: 0 15px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form img.cpth {
+  float: left;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form img.cpth {
+    width: 50%;
+  }
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form .form-errors {
+  width: 100%;
+  float: left;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form .form-errors span {
+  color: #a94442;
+  background-color: #f2dede;
+  border: 1px solid #a94442!important;
+  padding: 7px 30px;
+  float: left;
+  width: 100%;
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 1px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form .send-form {
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form .send-form button {
+  background: #e31837;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 30px!important;
+  width: 100%;
+  color: #fff;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sol .form .send-form button:hover {
+  background: #333;
+  color: #fff;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-giris-success {
+  width: 100%;
+  float: left;
+  display: none;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-giris-success .giris-content {
+  width: 100%;
+  float: left;
+  min-height: 200px;
+  margin-top: 40px;
+  text-align: center;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-giris-success .giris-content .ci-icon-content {
+  display: inline-block;
+  border: 2px solid #e31837;
+  border-radius: 50%;
+  padding: 20px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-giris-success .giris-content .ci-icon-content i {
+  color: #e31837;
+  font-size: 42px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-giris-success .giris-content .ci-success-text {
+  color: #e31837;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag {
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  min-height: 282px;
+  border: 1px solid #ececec;
+  position: relative;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-color: #fff;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .title {
+  width: 100%;
+  float: left;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ececec;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .title h2 {
+  width: 100%;
+  float: left;
+  font-weight: 700;
+  font-size: 19px;
+  color: #333;
+  margin: 0;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .form-errors {
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .form-errors span {
+  color: #a94442;
+  background-color: #f2dede;
+  border: 1px solid #a94442!important;
+  padding: 14px 30px;
+  float: left;
+  width: 100%;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 1px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .form-errors span i {
+  margin-right: 6px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .form {
+  width: 100%;
+  float: left;
+  margin-top: 25px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .form .yada {
+  width: 100%;
+  float: left;
+  text-align: center;
+  position: relative;
+  margin-bottom: 15px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .form .yada:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #555;
+  left: 0;
+  bottom: 15px;
+  z-index: -3;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .form .yada span {
+  font-weight: 600;
+  color: #555;
+  background: #fff;
+  font-size: 18px;
+  padding: 0 24px;
+  position: relative;
+  /*&:before{
+													content:'';
+													width:100%;
+													height:100%;
+													position:absolute;
+													left:0;
+													top:0;
+													background:#fdfdfd;
+													z-index:-22;
+												}*/
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .form .help-block {
+  font-size: 14px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .form label {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #333;
+  margin-bottom: 10px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .form input {
+  border-radius: 0;
+  height: 53px;
+  font-size: 14px;
+  border: 1px solid #eee;
+  float: left;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .form input::-webkit-input-placeholder {
+  color: #555555;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .form input:-moz-placeholder {
+  color: #555555;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .form input::-moz-placeholder {
+  color: #555555;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .form input:-ms-placeholder {
+  color: #555555;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .form input:focus {
+  box-shadow: none;
+  border: 1px solid #e31837;
+  background: #fff;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .form textarea {
+  resize: none;
+  height: 130px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .form textarea:focus {
+  box-shadow: none;
+  border: 1px solid #e31837;
+  background: #fff;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .form-group a.facebook {
+  background-color: #3b579d;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 30px!important;
+  margin: 5px 0;
+  float: left;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .form-group a.facebook i {
+  margin-right: 10px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .submit-items {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .submit-items a {
+  color: #333;
+  text-decoration: underline;
+  float: left;
+  margin-top: 15px;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .submit-items button {
+  background: green;
+  padding: 10px 30px!important;
+  font-weight: 700;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.cihaniriboy-uyelik-content .cihaniriboy-uyelik-page .cihaniriboy-uyelik-sag .submit-items button:hover {
+  background: #333;
+  color: #fff;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+/***** Form ****/
+.cihaniriboy-success-form-content {
+  width: 100%;
+  float: left;
+  display: none;
+}
+.cihaniriboy-success-form-content .cihaniriboy-succes-message {
+  width: 100%;
+  float: left;
+  min-height: 200px;
+  margin-top: 40px;
+  text-align: center;
+}
+.cihaniriboy-success-form-content .cihaniriboy-succes-message .ci-icon-content {
+  display: inline-block;
+  border: 2px solid #e31837;
+  border-radius: 50%;
+  padding: 20px;
+}
+.cihaniriboy-success-form-content .cihaniriboy-succes-message .ci-icon-content i {
+  color: #e31837;
+  font-size: 42px;
+}
+.cihaniriboy-success-form-content .cihaniriboy-succes-message .ci-success-text {
+  color: #e31837;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+}
+/* Sepet Box */
+.sepet-alert-content .close {
+  font-size: 40px;
+  color: #797979;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  opacity: 1;
+  z-index: 9999;
+}
+.sepet-alert-content .close:hover {
+  color: #e31837;
+}
+.sepet-alert-content .modal-content {
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+  z-index: 3;
+}
+.sepet-alert-content .alert-body {
+  width: 100%;
+  float: left;
+  min-height: 200px;
+  margin-top: 40px;
+  text-align: center;
+}
+.sepet-alert-content .alert-body .ci-icon-content {
+  display: inline-block;
+  border: 2px solid #e31837;
+  border-radius: 50%;
+  padding: 20px;
+}
+.sepet-alert-content .alert-body .ci-icon-content i {
+  color: #e31837;
+  font-size: 42px;
+}
+.sepet-alert-content .alert-body .ci-success-text {
+  color: #333;
+  font-size: 23px;
+  font-weight: 600;
+  width: 100%;
+  float: left;
+  margin-top: 30px;
+}
+.sozlesme-modal {
+  font-size: 14px;
+}

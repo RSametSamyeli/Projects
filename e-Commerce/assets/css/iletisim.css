@@ -1,0 +1,262 @@
+@import "../css/cihaniriboyreset.css";
+/*  İletişim Css */
+/*------------------------------------------------------------------
+[Less Zr]
+-------------------------------------------------------------------*/
+/*--------------- Base Color --------------*/
+/*--------------- PlaceHolder ---------------*/
+/*--------------- Absolute ---------------*/
+/*--------------- Relative ---------------*/
+/*------------ Rotate -----------------*/
+/*--------------- Border Radius ---------------*/
+/*--------------- Custom Radius ---------------*/
+/*--------------- Transtion---------------*/
+/*--------------- Origin Transform ---------------*/
+/*--------------- Scale ---------------*/
+/*--------------- Linear Grarient ---------------*/
+/*--------------- Quick Gradient ---------------*/
+/*--------------- Box Shadow 1 ---------------*/
+/*--------------- Box Shadow 2 ---------------*/
+/*--------------- Box Shadow 3 ---------------*/
+.box-shadow-3 {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.box-shadow-3:before,
+.box-shadow-3:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.iletisim-sol {
+  width: 100%;
+  float: left;
+  margin-top: 40px;
+  /* Bloklar */
+}
+.iletisim-sol .gmap {
+  width: 100%;
+  float: left;
+  padding: 0 20px;
+}
+.iletisim-sol .is-bloklar {
+  width: 100%;
+  float: left;
+  margin-top: 30px;
+}
+.iletisim-sol .is-bloklar .is-tekli-blok {
+  width: 100%;
+  float: left;
+  margin-bottom: 15px;
+  /* Blog Bilgileri */
+}
+.iletisim-sol .is-bloklar .is-tekli-blok .tekli-blok-baslik {
+  width: 100%;
+  float: left;
+  margin-bottom: 15px;
+}
+.iletisim-sol .is-bloklar .is-tekli-blok .tekli-blok-baslik h2 {
+  letter-spacing: -1px;
+  font-weight: 600;
+  color: inherit;
+  display: block;
+  padding-left: 10px;
+  font-size: 18px;
+}
+.iletisim-sol .is-bloklar .is-tekli-blok .blog-image-padding {
+  width: 100%;
+  float: left;
+  padding: 5px;
+  /* İletişim Img */
+}
+.iletisim-sol .is-bloklar .is-tekli-blok .blog-image-padding .blog-image {
+  position: relative;
+  border-radius: 5%;
+  color: #fff;
+  border: 3px solid #ccc;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+}
+.iletisim-sol .is-bloklar .is-tekli-blok .blog-image-padding .blog-image:before {
+  content: '';
+  position: absolute;
+  background: inherit;
+  border-radius: 0.1%;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+}
+.iletisim-sol .is-bloklar .is-tekli-blok .blog-image-padding .blog-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.iletisim-sol .is-bloklar .is-tekli-blok .iletisim-blog-bilgiler {
+  width: 100%;
+  float: left;
+  padding-top: 10px;
+}
+.iletisim-sol .is-bloklar .is-tekli-blok .iletisim-blog-bilgiler .iletisim-item {
+  float: left;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #333;
+}
+.iletisim-sol .is-bloklar .is-tekli-blok .iletisim-blog-bilgiler .iletisim-item i {
+  margin-right: 7px;
+  color: #e31837;
+  float: left;
+  margin-top: 1px;
+  font-size: 18px;
+}
+.iletisim-sol .is-bloklar .is-tekli-blok .iletisim-blog-bilgiler .iletisim-item a {
+  font-size: 14px;
+  color: #333;
+}
+/* İletişim Sağ */
+.iletisim-sag {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+.iletisim-sag .iletisim-form {
+  width: 100%;
+  float: left;
+}
+.iletisim-sag .iletisim-form .iletisim-form-title {
+  width: 100%;
+  float: left;
+  margin-bottom: 15px;
+}
+.iletisim-sag .iletisim-form .iletisim-form-title h3 {
+  color: #333;
+  display: block;
+  font-size: 20px;
+  font-weight: 900;
+  padding-bottom: 15px;
+  width: 100%;
+}
+.iletisim-sag .iletisim-form .iletisim-form-body {
+  width: 100%;
+  float: left;
+}
+.iletisim-sag .iletisim-form .iletisim-form-body .help-block {
+  font-size: 14px;
+}
+.iletisim-sag .iletisim-form .iletisim-form-body label {
+  font-size: 14px;
+  width: 100%;
+  float: left;
+  color: #333;
+  margin-bottom: 8px;
+}
+.iletisim-sag .iletisim-form .iletisim-form-body input {
+  border-radius: 0;
+  height: 33px;
+}
+.iletisim-sag .iletisim-form .iletisim-form-body input:focus {
+  box-shadow: none;
+  border: 1px solid #e31837;
+  background: #fff;
+}
+.iletisim-sag .iletisim-form .iletisim-form-body textarea {
+  resize: none;
+  height: 130px;
+}
+.iletisim-sag .iletisim-form .iletisim-form-body textarea:focus {
+  box-shadow: none;
+  border: 1px solid #e31837;
+  background: #fff;
+}
+.iletisim-sag .iletisim-form .iletisim-form-body .iletisim-send {
+  width: 100%;
+  float: left;
+  margin-top: 35px;
+}
+.iletisim-sag .iletisim-form .iletisim-form-body .iletisim-send button {
+  background: #e31837;
+  color: #fff;
+  padding: 6px 30px;
+  border-top: none;
+  border-left: none;
+  font-size: 14px;
+  border-right: none;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.iletisim-sag .iletisim-form .iletisim-form-body .iletisim-send button:hover {
+  background: #19629f;
+  color: #fff;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.iletisim-sag .iletisim-form .iletisim-form-body .is-errors {
+  width: 100%;
+  float: left;
+  margin-top: 15px;
+}
+.iletisim-sag .iletisim-form .iletisim-form-body .is-errors span {
+  font-size: 14px;
+  width: 100%;
+  float: left;
+  color: #a94442;
+  font-weight: 600;
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+  padding: 15px 20px;
+}
+.is-success-msg-content {
+  width: 100%;
+  float: left;
+  display: none;
+}
+.is-success-msg-content .is-succes-message {
+  width: 100%;
+  float: left;
+  min-height: 200px;
+  margin-top: 40px;
+  text-align: center;
+}
+.is-success-msg-content .is-succes-message .ci-icon-content {
+  display: inline-block;
+  border: 2px solid #e31837;
+  border-radius: 50%;
+  padding: 20px;
+}
+.is-success-msg-content .is-succes-message .ci-icon-content i {
+  color: #e31837;
+  font-size: 42px;
+}
+.is-success-msg-content .is-succes-message .ci-success-text {
+  color: #e31837;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+}

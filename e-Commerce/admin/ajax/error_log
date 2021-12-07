@@ -1,0 +1,38 @@
+[14-Feb-2018 23:33:57 UTC] PHP Notice:  unserialize(): Error at offset 0 of 1 bytes in /home/vivosisorg/public_html/admin/ajax/blog/blogsil.php on line 12
+[14-Feb-2018 23:33:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/vivosisorg/public_html/admin/ajax/blog/blogsil.php on line 20
+[15-Feb-2018 19:22:58 UTC] PHP Parse error:  syntax error, unexpected '$kuponlar' (T_VARIABLE) in /home/vivosisorg/public_html/admin/ajax/siparis/mailyolla.php on line 259
+[15-Feb-2018 19:23:40 UTC] PHP Notice:  Undefined variable: defvarPlus in /home/vivosisorg/public_html/admin/ajax/siparis/mailyolla.php on line 277
+[15-Feb-2018 19:30:31 UTC] PHP Notice:  Undefined variable: defvarPlus in /home/vivosisorg/public_html/admin/ajax/siparis/mailyolla.php on line 278
+[15-Feb-2018 19:32:13 UTC] PHP Notice:  Undefined variable: defvarPlus in /home/vivosisorg/public_html/admin/ajax/siparis/mailyolla.php on line 278
+[16-Feb-2018 00:05:31 UTC] PHP Notice:  Undefined variable: defvarPlus in /home/vivosisorg/public_html/admin/ajax/siparis/mailyolla.php on line 277
+[16-Feb-2018 00:20:53 UTC] PHP Warning:  Illegal string offset 'id' in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 39
+[16-Feb-2018 00:20:53 UTC] PHP Warning:  Illegal string offset 'id' in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 39
+[16-Feb-2018 00:20:53 UTC] PHP Warning:  Illegal string offset 'id' in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 39
+[16-Feb-2018 00:20:53 UTC] PHP Warning:  Illegal string offset 'id' in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 39
+[16-Feb-2018 00:20:53 UTC] PHP Warning:  Illegal string offset 'id' in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 39
+[16-Feb-2018 00:20:53 UTC] PHP Warning:  Illegal string offset 'id' in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 39
+[16-Feb-2018 00:20:53 UTC] PHP Warning:  Illegal string offset 'id' in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 39
+[16-Feb-2018 00:20:53 UTC] PHP Warning:  Illegal string offset 'id' in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 39
+[16-Feb-2018 00:23:13 UTC] PHP Notice:  Undefined index: id in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 41
+[16-Feb-2018 00:23:16 UTC] PHP Notice:  Undefined index: id in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 41
+[16-Feb-2018 00:25:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 39
+[16-Feb-2018 00:26:28 UTC] PHP Notice:  Undefined variable: uyebul in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 40
+[16-Feb-2018 00:26:28 UTC] PHP Notice:  Undefined variable: uyebul in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 40
+[16-Feb-2018 00:26:28 UTC] PHP Notice:  Undefined variable: uyebul in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 40
+[16-Feb-2018 00:33:30 UTC] PHP Notice:  Undefined variable: mesaj in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 53
+[16-Feb-2018 00:33:31 UTC] PHP Notice:  Undefined variable: mesaj in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 53
+[16-Feb-2018 00:33:31 UTC] PHP Notice:  Undefined variable: mesaj in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 53
+[16-Feb-2018 00:33:44 UTC] PHP Notice:  Undefined variable: mesaj in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 53
+[16-Feb-2018 00:33:44 UTC] PHP Notice:  Undefined variable: mesaj in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 53
+[16-Feb-2018 00:33:44 UTC] PHP Notice:  Undefined variable: mesaj in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 53
+[16-Feb-2018 00:34:04 UTC] PHP Notice:  Undefined variable: mesaj in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 53
+[16-Feb-2018 00:34:04 UTC] PHP Notice:  Undefined variable: mesaj in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 53
+[16-Feb-2018 00:34:04 UTC] PHP Notice:  Undefined variable: mesaj in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 53
+[16-Feb-2018 00:34:21 UTC] PHP Notice:  Undefined variable: mesaj in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 53
+[16-Feb-2018 00:34:21 UTC] PHP Notice:  Undefined variable: mesaj in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 53
+[16-Feb-2018 00:34:21 UTC] PHP Notice:  Undefined variable: mesaj in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 53
+[16-Feb-2018 00:39:18 UTC] PHP Warning:  http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given in /home/vivosisorg/public_html/admin/ajax/maillist/toplusmsyolla.php on line 7
+[28-Dec-2018 22:07:01 Europe/Istanbul] PHP Notice:  Undefined index: sbitis in /home/limidemo/public_html/admin/ajax/urun/urunduzenle.php on line 85
+[28-Dec-2018 22:07:01 Europe/Istanbul] PHP Notice:  Undefined index: sbitissaat in /home/limidemo/public_html/admin/ajax/urun/urunduzenle.php on line 86
+[28-Dec-2018 22:07:12 Europe/Istanbul] PHP Notice:  Undefined index: sbitis in /home/limidemo/public_html/admin/ajax/urun/urunduzenle.php on line 85
+[28-Dec-2018 22:07:12 Europe/Istanbul] PHP Notice:  Undefined index: sbitissaat in /home/limidemo/public_html/admin/ajax/urun/urunduzenle.php on line 86

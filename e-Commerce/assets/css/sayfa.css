@@ -1,0 +1,162 @@
+/*  Sayfa Css */
+/*------------------------------------------------------------------
+[Less Zr]
+-------------------------------------------------------------------*/
+/*--------------- Base Color --------------*/
+/*--------------- PlaceHolder ---------------*/
+/*--------------- Absolute ---------------*/
+/*--------------- Relative ---------------*/
+/*------------ Rotate -----------------*/
+/*--------------- Border Radius ---------------*/
+/*--------------- Custom Radius ---------------*/
+/*--------------- Transtion---------------*/
+/*--------------- Origin Transform ---------------*/
+/*--------------- Scale ---------------*/
+/*--------------- Linear Grarient ---------------*/
+/*--------------- Quick Gradient ---------------*/
+/*--------------- Box Shadow 1 ---------------*/
+/*--------------- Box Shadow 2 ---------------*/
+/*--------------- Box Shadow 3 ---------------*/
+.box-shadow-3 {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.box-shadow-3:before,
+.box-shadow-3:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/* Sidebar */
+.kurumsal-sidebar {
+  width: 100%;
+  float: left;
+  margin-bottom: 30px;
+}
+.kurumsal-sidebar .title {
+  width: 100%;
+  float: left;
+  margin-bottom: 15px;
+}
+.kurumsal-sidebar .title h1 {
+  display: block;
+  color: #333;
+  padding: 3px 5px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.kurumsal-sidebar > ul {
+  width: 100%;
+  float: left;
+}
+.kurumsal-sidebar > ul > li.active:after {
+  color: #e31837 !important;
+}
+.kurumsal-sidebar > ul > li.active > a {
+  color: #e31837;
+}
+.kurumsal-sidebar > ul > li.has {
+  /*&:after {
+					content:"\f105";
+					font-family:'FontAwesome';
+					color:#555;
+					position:absolute;
+					right:9px;
+					top:5px;
+					font-size:21px;
+				}*/
+}
+.kurumsal-sidebar > ul > li {
+  width: 100%;
+  float: left;
+  background: #fff;
+  position: relative;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.kurumsal-sidebar > ul > li ul {
+  width: 100%;
+  float: left;
+}
+.kurumsal-sidebar > ul > li ul > li.has:after {
+  content: "\f105";
+  font-family: 'FontAwesome';
+  color: #555;
+  position: absolute;
+  right: 9px;
+  top: 5px;
+  font-size: 21px;
+}
+.kurumsal-sidebar > ul > li ul > li.active > a {
+  color: #e31837;
+}
+.kurumsal-sidebar > ul > li ul > li {
+  width: 100%;
+  float: left;
+  background: #fff;
+  position: relative;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.kurumsal-sidebar > ul > li ul > li:hover:after {
+  color: #e31837;
+}
+.kurumsal-sidebar > ul > li ul > li:hover > a {
+  color: #e31837;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.kurumsal-sidebar > ul > li ul > li a {
+  display: block;
+  font-size: 15px;
+  color: #555;
+  font-weight: 500;
+  padding: 10px 9px 10px 25px;
+}
+.kurumsal-sidebar > ul > li > a {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  font-weight: 700;
+  padding: 15px 9px;
+}
+.sayfa-content {
+  width: 100%;
+  float: left;
+  min-height: 500px;
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.sayfa-content .title h2 {
+  font-size: 18px;
+  color: #e31837;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.sayfa-content .text {
+  width: 100%;
+  float: left;
+  font-size: 14px;
+}

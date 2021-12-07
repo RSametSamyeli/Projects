@@ -1,0 +1,141 @@
+/*  Sss Css */
+/*------------------------------------------------------------------
+[Less Zr]
+-------------------------------------------------------------------*/
+/*--------------- Base Color --------------*/
+/*--------------- PlaceHolder ---------------*/
+/*--------------- Absolute ---------------*/
+/*--------------- Relative ---------------*/
+/*------------ Rotate -----------------*/
+/*--------------- Border Radius ---------------*/
+/*--------------- Custom Radius ---------------*/
+/*--------------- Transtion---------------*/
+/*--------------- Origin Transform ---------------*/
+/*--------------- Scale ---------------*/
+/*--------------- Linear Grarient ---------------*/
+/*--------------- Quick Gradient ---------------*/
+/*--------------- Box Shadow 1 ---------------*/
+/*--------------- Box Shadow 2 ---------------*/
+/*--------------- Box Shadow 3 ---------------*/
+.box-shadow-3 {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.box-shadow-3:before,
+.box-shadow-3:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/* Sss*/
+.sss-content {
+  width: 100%;
+  float: left;
+  margin-top: 15px;
+}
+.sss-content .page-title {
+  width: 100%;
+  float: left;
+}
+.sss-content .page-title h1 {
+  margin: 0 0 23px;
+  padding: 0 0 15px;
+  display: block;
+  color: #575757;
+  font-size: 24px;
+  font-weight: 900;
+  border-bottom: 4px solid #eee;
+  position: relative;
+}
+.sss-content .page-title h1:before {
+  content: '';
+  width: 65px;
+  height: 4px;
+  background: #cd5369;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+.sss-content .panel-opened {
+  background-color: #e31837;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.sss-content .panel-opened h4 a {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  color: #fff;
+}
+.sss-content .panel-opened h4 a:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff!important;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -ms-transform: rotate(90deg) !important;
+  /* IE 9 */
+  -webkit-transform: rotate(90deg) !important;
+  /* Chrome, Safari, Opera */
+  transform: rotate(90deg) !important;
+  font-family: fontawesome;
+  content: "\f0da";
+}
+.sss-content .panel-heading {
+  cursor: pointer;
+}
+.sss-content .panel-heading h4 {
+  position: relative;
+  width: 100%;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: block;
+}
+.sss-content .panel-heading h4 a {
+  font-size: 16px;
+}
+.sss-content .panel-heading h4 a:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #656565;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -ms-transform: rotate(0deg);
+  /* IE 9 */
+  -webkit-transform: rotate(0deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+  font-family: fontawesome;
+  content: "\f0da";
+}
+.sss-content .panel-body {
+  color: #333;
+  font-size: 15px;
+}

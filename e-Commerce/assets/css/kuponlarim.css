@@ -1,0 +1,163 @@
+/* Kuponlarim Css */
+/*------------------------------------------------------------------
+[Less Zr]
+-------------------------------------------------------------------*/
+/*--------------- Base Color --------------*/
+/*--------------- PlaceHolder ---------------*/
+/*--------------- Absolute ---------------*/
+/*--------------- Relative ---------------*/
+/*------------ Rotate -----------------*/
+/*--------------- Border Radius ---------------*/
+/*--------------- Custom Radius ---------------*/
+/*--------------- Transtion---------------*/
+/*--------------- Origin Transform ---------------*/
+/*--------------- Scale ---------------*/
+/*--------------- Linear Grarient ---------------*/
+/*--------------- Quick Gradient ---------------*/
+/*--------------- Box Shadow 1 ---------------*/
+/*--------------- Box Shadow 2 ---------------*/
+/*--------------- Box Shadow 3 ---------------*/
+.box-shadow-3 {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.box-shadow-3:before,
+.box-shadow-3:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.kuponlarim {
+  width: 100%;
+  float: left;
+  min-height: 300px;
+  /* Title */
+}
+.kuponlarim .title h2 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+  display: block;
+  color: #575757;
+  font-size: 24px;
+  font-weight: 700;
+  border-bottom: 4px solid #eee;
+  margin-bottom: 23px;
+  position: relative;
+}
+.kuponlarim .title h2:before {
+  content: '';
+  width: 65px;
+  height: 4px;
+  background: #e31837;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+.kuponlarim .puanlar {
+  width: 100%;
+  float: left;
+}
+.kuponlarim .puanlar .title {
+  font-weight: 600;
+  color: #333;
+}
+.kuponlarim .puanlar .puan-table {
+  margin-top: 20px;
+}
+.kuponlarim .puanlar .puan-table table {
+  border: 1px solid #ddd;
+}
+.kuponlarim .puanlar .puan-table table thead th {
+  font-weight: 400;
+  font-size: 14px;
+  background: #f5f5f5;
+  color: #444;
+}
+.kuponlarim .puanlar .puan-table table tbody tr td {
+  font-size: 13px;
+  font-weight: 300;
+  background: #fff;
+  padding: 8px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+.kuponlarim .puanlar .puan-table table tbody tr td span.kapali {
+  color: red;
+}
+.kuponlarim .puanlar .puan-table table tbody tr td span.acik {
+  color: green;
+}
+.kuponlarim .acik-kuponlar {
+  width: 100%;
+  float: left;
+  margin-bottom: 15px;
+}
+.kuponlarim .acik-kuponlar .title {
+  font-weight: 600;
+  color: #333;
+}
+.kuponlarim .acik-kuponlar .kupon-table {
+  margin-top: 20px;
+}
+.kuponlarim .acik-kuponlar .kupon-table table {
+  border: 1px solid #ddd;
+}
+.kuponlarim .acik-kuponlar .kupon-table table thead th {
+  font-weight: 400;
+  font-size: 14px;
+  background: #f5f5f5;
+  color: #444;
+}
+.kuponlarim .acik-kuponlar .kupon-table table tbody tr td {
+  font-size: 13px;
+  font-weight: 300;
+  background: #fff;
+  padding: 8px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+.kuponlarim .acik-kuponlar .kupon-table table tbody tr td span.kapali {
+  color: red;
+}
+.kuponlarim .acik-kuponlar .kupon-table table tbody tr td span.acik {
+  color: green;
+}
+.kuponlarim .gecmis-kuponlarim {
+  width: 100%;
+  float: left;
+  margin-bottom: 15px;
+}
+.kuponlarim .gecmis-kuponlarim .title {
+  font-weight: 600;
+  color: #333;
+}
+.kuponlarim .gecmis-kuponlarim .kupon-table {
+  margin-top: 20px;
+}
+.kuponlarim .gecmis-kuponlarim .kupon-table table thead th {
+  font-weight: 400;
+  font-size: 14px;
+  background: #f5f5f5;
+  color: #444;
+}
+.kuponlarim .gecmis-kuponlarim .kupon-table table tbody tr td {
+  font-size: 13px;
+  font-weight: 300;
+  background: #fff;
+  padding: 8px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}

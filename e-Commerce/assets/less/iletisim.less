@@ -1,0 +1,245 @@
+/*  İletişim Css */
+@import "def.less";
+@import "../css/cihaniriboyreset.css";
+
+@xs-min: 480px;
+@sm-min: 768px;
+@md-min: 992px;
+@lg-min: 1200px;
+@zr-tab-max : 959px;
+@xs-max: (@sm-min - 1);
+@sm-max: (@md-min - 1);
+@md-max: (@lg-min - 1);
+
+@phone:          ~"only screen and (max-width: @{xs-min})";
+@phone-strict:   ~"only screen and (min-width: @{xs-min}) and (max-width: @{xs-max})";
+@tablet:         ~"only screen and (min-width: @{sm-min})";
+@tablet-strict:  ~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
+@tablet-max:     ~"only screen and (max-width: @{xs-max})";
+@desktop:        ~"only screen and (min-width: @{md-min})";
+@desktop-strict: ~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
+@large:          ~"only screen and (min-width: @{lg-min})";
+@large-max:      ~"only screen and (max-width: @{lg-min})";
+@zr-respon:      ~"only screen and (max-width: @{zr-tab-max})";
+
+.iletisim-sol{
+	width:100%;
+	float:left;
+	margin-top:40px;	
+		.gmap {
+			width:100%;
+			float:left;
+			padding:0 20px;
+		}
+		/* Bloklar */
+		.is-bloklar{
+			width:100%;
+			float:left;
+			margin-top:30px;
+				.is-tekli-blok {
+					width:100%;
+					float:left;
+					margin-bottom:15px;
+						.tekli-blok-baslik{
+							width:100%;
+							float:left;
+							margin-bottom:15px;
+								h2 {
+									letter-spacing:-1px;
+									font-weight:600;
+									color:inherit;
+									display:block;
+									padding-left:10px;
+									font-size:18px;
+								}
+						}
+						.blog-image-padding{
+							width:100%;
+							float:left;
+							padding:5px;
+								/* İletişim Img */
+								.blog-image{
+									position: relative;
+									border-radius: 50% / 10%;
+									color: #fff;
+									border: 3px solid #ccc;
+									margin-bottom:15px;
+									text-align: center;
+									width:100%;
+									overflow: hidden;
+									-webkit-box-shadow: 0 3px 2px rgba(0,0,0,0.5);
+									box-shadow: 0 3px 2px rgba(0,0,0,0.5);
+									-moz-box-shadow: 0 3px 2px rgba(0,0,0,0.5);
+										&:before {
+											content: '';
+											position: absolute;
+											background: inherit;
+											border-radius: 5% / 50%;
+											top: 10%;
+											bottom: 10%;
+											right: -5%;
+											left: -5%;
+										}
+										img {
+											width:100%;
+											max-width: 100%;
+											height: auto;
+											display:block;
+											
+										}
+								}
+								
+						}
+					/* Blog Bilgileri */
+					.iletisim-blog-bilgiler{
+						width:100%;
+						float:left;
+						padding-top:10px;
+							.iletisim-item {
+								float:left;
+								font-size:14px;
+								width:100%;
+								margin-bottom:10px;
+								color:#333;
+									i {
+										margin-right:7px;
+										color:@basecolor;
+										float:left;
+										margin-top:1px;
+										font-size:18px;
+									}
+									a{
+										font-size:14px;	
+										color:#333;
+										
+									}
+							}
+					}
+				}
+		}
+}
+		
+		
+/* İletişim Sağ */
+		.iletisim-sag{
+			width:100%;
+			float:left;
+			margin-top:20px;
+			
+				.iletisim-form {
+					width:100%;
+					float:left;
+				
+						.iletisim-form-title{
+							width:100%;
+							float:left;
+							margin-bottom:15px;
+								h3 {
+									color:#333;
+									display:block;
+									font-size:20px;
+									font-weight:900;
+									padding-bottom:15px;
+									width:100%;
+								}
+						}
+						.iletisim-form-body{
+							width:100%;
+							float:left;
+								.help-block{
+									font-size:14px;
+								}
+								label {
+									font-size:14px;
+									width:100%;
+									float:left;
+									color:#333;
+									margin-bottom:8px;
+								}
+								input {
+									border-radius:0;
+									height:33px;
+									&:focus {
+										box-shadow:none;
+										border:1px solid @basecolor;
+										background:#fff;
+									}
+								}
+								textarea {
+									resize:none;
+									height:130px;
+									&:focus {
+										box-shadow:none;
+										border:1px solid @basecolor;
+										background:#fff;
+									}
+								}
+								.iletisim-send{
+									width:100%;
+									float:left;
+									margin-top:35px;
+										button {
+											background:@basecolor;
+											color:#fff;
+											padding:6px 30px;
+											border-top:none;
+											border-left:none;
+											font-size:14px;
+											border-right:none;
+											 .transition(all,0.2s,linear);
+											  &:hover {
+												 background: #19629f;;
+												 color:#fff;
+												 .transition(all,0.2s,linear);
+											  }
+										}
+								}
+								.is-errors{
+									width:100%;
+									float:left;
+									margin-top:15px;
+										span {
+											font-size:14px;
+											width:100%;
+											float:left;
+											color: #a94442;
+											font-weight:600;
+											background-color: #f2dede;
+											border:1px solid #ebccd1;
+											padding:15px 20px;
+										}
+								}
+						}
+				}
+		}
+		
+	.is-success-msg-content {
+		width:100%;
+		float:left;
+		display:none;
+		.is-succes-message{
+				width:100%;
+				float:left;
+				min-height:200px;
+				margin-top:40px;
+				text-align:center;
+					.ci-icon-content{
+						display:inline-block;
+						border:2px solid @basecolor;
+						border-radius:50%;
+						padding:20px;
+							i {
+								color:@basecolor;
+								font-size:42px;
+							}
+					}
+					.ci-success-text {
+						color:@basecolor;
+						font-size:20px;
+						font-weight:600;
+						width:100%;
+						float:left;
+						margin-top:10px;
+					}
+			}
+	}

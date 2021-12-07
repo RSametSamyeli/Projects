@@ -1,0 +1,183 @@
+/*------------------------------------------------------------------
+[Less Zr]
+-------------------------------------------------------------------*/
+@xs-min: 480px;
+@sm-min: 768px;
+@md-min: 992px;
+@lg-min: 1200px;
+
+@xs-max: (@sm-min - 1);
+@sm-max: (@md-min - 1);
+@md-max: (@lg-min - 1);
+
+@phone:          ~"only screen and (max-width: @{xs-min})";
+@phone-strict:   ~"only screen and (min-width: @{xs-min}) and (max-width: @{xs-max})";
+@tablet-max:     ~"only screen and (max-width: @{xs-max})";
+@tablet:         ~"only screen and (min-width: @{sm-min})";
+@tablet-strict:  ~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
+@desktop:        ~"only screen and (min-width: @{md-min})";
+@desktop-strict: ~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
+@large:          ~"only screen and (min-width: @{lg-min})";
+
+.clear { clear:both;}
+.col-center {  float: none; display: block; margin-left: auto; margin-right: auto; }
+.no-padding { padding:0!important;}
+.margin-top-5 { margin-top:5px;}
+.margin-top-10 { margin-top:10px;}
+.margin-top-15 { margin-top:10px;}
+.margin-top-25 { margin-top:20px;}
+.margin-bottom-5 { margin-bottom:5px;}
+.margin-bottom-10 { margin-bottom:10px;}
+.margin-bottom-15 { margin-bottom:10px;}
+.margin-bottom-25 { margin-bottom:20px;}
+.inline-block {display:inline-block;}
+.xs-margin-bottom-10 { 
+	@media @tablet-max {
+		margin-bottom:10px;
+	}
+}
+body {
+	font-family: "Helvetica Neue", Helvetica, "Noto Sans", sans-serif, Arial, sans-serif;
+}
+
+/*--------------- Base Color --------------*/
+@color:#fff;
+@basecolor:#eee!important;
+@cc : #fcsff;
+
+
+/*--------------- Absolute ---------------*/
+.absolute (@left:0,@top:0,@width:100px,@zindex:10){
+	position:absolute;
+	left:@left;
+	top:@top;
+	width:@width;
+	z-index:@zindex;
+}
+/*--------------- Relative ---------------*/
+
+.relative (@left:0,@top:0,@width:100px,@zindex:10){
+	position:relative;
+	left:@left;
+	top:@top;
+	width:@width;
+	z-index:@zindex;
+}
+
+
+/*--------------- Border Radius ---------------*/
+
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+/*--------------- Custom Radius ---------------*/
+
+.border-radius-custom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px) {
+    -webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+    -moz-border-radius: @topleft @topright @bottomright @bottomleft;
+    border-radius: @topleft @topright @bottomright @bottomleft;
+}
+
+/*--------------- Transtion---------------*/
+
+.transition (@prop: all, @time: 0.4s, @ease: linear) {
+    -webkit-transition: @prop @time @ease;
+    -moz-transition: @prop @time @ease;
+    -o-transition: @prop @time @ease;
+    -ms-transition: @prop @time @ease;
+    transition: @prop @time @ease;
+}
+/*--------------- placeholder --------------*/
+.placeholder(@color: #aaa) {
+  &:-moz-placeholder            { color: @color; } // Firefox 4-18
+  &::-moz-placeholder           { color: @color; } // Firefox 19+
+  &:-ms-input-placeholder       { color: @color; } // Internet Explorer 10+
+  &::-webkit-input-placeholder  { color: @color; } // Safari and Chrome
+}
+
+/*--------------- Linear Grarient ---------------*/
+
+.gradient (@origin: left, @start: #ffffff, @stop: #000000) {
+    background-color: @start;
+    background-image: -webkit-linear-gradient(@origin, @start, @stop);
+    background-image: -moz-linear-gradient(@origin, @start, @stop);
+    background-image: -o-linear-gradient(@origin, @start, @stop);
+    background-image: -ms-linear-gradient(@origin, @start, @stop);
+    background-image: linear-gradient(@origin, @start, @stop);
+}
+
+/*--------------- Quick Gradient ---------------*/
+.quick-gradient (@origin: left, @alpha: 0.2) {
+    background-color: @basecolor;
+    background-image: -webkit-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: -moz-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: -o-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: -ms-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+}
+
+/*--------------- Box Shadow 1 ---------------*/
+
+.box-shadow-1 (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
+    -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+    -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+    box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+
+/*--------------- Box Shadow 2 ---------------*/
+
+.box-shadow-2(@x: 0px, @y: 15px, @blur: 10px, @alpha: 0.5){
+	position:relative;
+	 &:before,&:after {
+		  z-index: -1;
+		  position: absolute;
+		  content: "";
+		  bottom: 15px;
+		  left: 10px;
+		  width: 50%;
+		  top: 80%;
+		  max-width:300px;
+		  background: #777;
+		  -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+		  -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+		  box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+		  -webkit-transform: rotate(-3deg);
+		  -moz-transform: rotate(-3deg);
+		  -o-transform: rotate(-3deg);
+		  -ms-transform: rotate(-3deg);
+		  transform: rotate(-3deg);
+	 }
+	 &:after{
+		 -webkit-transform: rotate(3deg);
+		  -moz-transform: rotate(3deg);
+		  -o-transform: rotate(3deg);
+		  -ms-transform: rotate(3deg);
+		  transform: rotate(3deg);
+		  right: 10px;
+		  left: auto;
+	 }
+} 
+/*--------------- Box Shadow 3 ---------------*/
+
+.box-shadow-3{
+	position:relative;       
+-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+   -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+		box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+		&:before,&:after {
+			content:"";
+			position:absolute; 
+			z-index:-1;
+			-webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+			-moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+			box-shadow:0 0 20px rgba(0,0,0,0.8);
+			top:50%;
+			bottom:0;
+			left:10px;
+			right:10px;
+			-moz-border-radius:100px / 10px;
+			border-radius:100px / 10px;
+	}
+}

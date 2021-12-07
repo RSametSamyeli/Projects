@@ -1,0 +1,98 @@
+@import "zr-ready.less";
+
+
+/*  ############  Login ########*/ 
+
+body.login-page {
+   background: rgb(223,229,233);
+   background: -moz-radial-gradient(center, ellipse cover, rgba(223,229,233,1) 2%, rgba(223,229,233,1) 2%, rgba(178,192,202,1) 100%);
+   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(2%,rgba(223,229,233,1)), color-stop(2%,rgba(223,229,233,1)), color-stop(100%,rgba(178,192,202,1)));
+   background: -webkit-radial-gradient(center, ellipse cover, rgba(223,229,233,1) 2%,rgba(223,229,233,1) 2%,rgba(178,192,202,1) 100%);
+   background: -o-radial-gradient(center, ellipse cover, rgba(223,229,233,1) 2%,rgba(223,229,233,1) 2%,rgba(178,192,202,1) 100%);
+   background: -ms-radial-gradient(center, ellipse cover, rgba(223,229,233,1) 2%,rgba(223,229,233,1) 2%,rgba(178,192,202,1) 100%);
+   background: radial-gradient(ellipse at center, rgba(223,229,233,1) 2%,rgba(223,229,233,1) 2%,rgba(178,192,202,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfe5e9', endColorstr='#b2c0ca',GradientType=1 );
+}
+.login-box {
+	  position: relative;
+	  max-width: 500px;
+	  background: #222D3A;
+	  .border-radius(3px);
+	  box-shadow: 3px 4px 5px #888888;
+	  padding-bottom: 20px;
+	  margin-top: 150px;
+	  .login-logo{
+		text-align: center;
+		padding: 15px 0 10px;
+	  }
+	  .login-error {
+		width:80%;
+		margin:0 auto; 
+		font-size:12px;
+		h4 {
+			margin-bottom:10px;
+		}
+	  }
+	  hr {
+		  width: 70%;
+		  border-top: 1px solid rgba(0,0,0,0.13);
+		  border-bottom: 1px solid rgba(255,255,255,0.15);
+		  margin: 5px auto 20px;
+	  }
+	  .form-group {
+	  		 padding:0 5px;
+			 margin:5px 0;
+			 label.error {
+				color:red;
+				font-size:13px;	
+				margin-top:10px;
+			 }
+			.input-group {
+				padding:15px 43px 15px 13px;
+				.input-group-addon{
+					color:#fff;
+					background:none;
+					border:none;
+					i {
+						font-size:17px;
+						float:left;
+						color:#fff;
+						margin-top:2px;
+					}
+				}
+					input {
+						background:none;
+						border-top:none;
+						border-left:none;
+						border-right:none;
+						border-radius:0;
+						color:#fff;
+						border-bottom:1px solid #fff;
+						&:focus {
+							box-shadow:none;
+							border-bottom:1px solid #336699;
+						}
+					}
+			}
+			.btn-login {
+				width:95%;
+				padding:10px 0;
+				margin: 10px auto;
+				border:none;
+				background-color: #336699;
+				.transition(all,0.2s,ease-in-out);
+				box-shadow: inset 0 -2px 0 #24476B;
+				&:hover {
+					background-color:#2E5C8A;
+				}
+			}
+	  }
+	  .login-ajax {
+		margin-top:10px;
+		width:100%;
+		float:left;
+		display:none;
+		text-align:center;
+	  }
+}
+

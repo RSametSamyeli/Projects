@@ -1,0 +1,1234 @@
+/* Sepetim Css */
+@import "def.less";
+
+@xs-min: 480px;
+@sm-min: 768px;
+@md-min: 992px;
+@lg-min: 1200px;
+@zr-tab-max : 959px;
+@xs-max: (@sm-min - 1);
+@sm-max: (@md-min - 1);
+@md-max: (@lg-min - 1);
+
+@phone:          ~"only screen and (max-width: @{xs-min})";
+@phone-strict:   ~"only screen and (min-width: @{xs-min}) and (max-width: @{xs-max})";
+@tablet:         ~"only screen and (min-width: @{sm-min})";
+@tablet-strict:  ~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
+@tablet-max:     ~"only screen and (max-width: @{xs-max})";
+@desktop:        ~"only screen and (min-width: @{md-min})";
+@desktop-strict: ~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
+@large:          ~"only screen and (min-width: @{lg-min})";
+@large-max:      ~"only screen and (max-width: @{lg-min})";
+@zr-respon:      ~"only screen and (max-width: @{zr-tab-max})";	
+
+/* Sepet */
+.custom-sepet-content{
+	width:100%;
+	float:left;
+	min-height:450px;
+		.siparis-tamam-header{
+			width:100%;
+			float:left;
+			margin-top:40px;
+				.active {
+					border-top:2px solid @basecolor!important;
+				}
+				.step-blok {
+					width:100%;
+					float:left;
+					padding: 15px 25px 20px 25px;
+					height: 100px;
+					background:#fff;
+					border: 1px solid #e5e5e5;
+					position:relative;
+						> i {
+							position:absolute;
+							right:5px;
+							top:-15px;
+							font-size:120px;
+							color:#737373;
+							opacity:0.2;
+						}
+						.sepet-header{
+							width:100%;
+							float:left;
+							margin-top:10px;
+							position:relative;
+							
+							h2 {
+								display:block;
+								margin-bottom:10px;
+								font-weight:600;
+								font-size:16px;
+								line-height:22px;
+								margin-top:0;
+								> i {
+									margin-right:6px;
+									color:@basecolor;
+								}
+							}
+							p {
+								display:block;
+								font-size:14px;
+							}
+						}
+				}
+		}
+		.tamamla-sol{
+			width:100%;
+			float:left;
+			margin-top:20px;
+			min-height:200px;
+				/*Ödeme Bilgiler */
+				.odemeler {
+					width:100%;
+					float:left;
+					min-height:400px;
+					background:#fff;
+					border: 1px solid #e5e5e5;
+					padding:25px;
+						.card-errors{
+							width:100%;
+							float:left;
+								span {
+								    color: #a94442;
+									background-color: #f2dede;
+									border-color: #ebccd1;
+									 padding: 15px;
+									 width:100%;
+									 float:left;
+									margin-bottom: 20px;
+									border: 1px solid transparent;
+									border-radius: 4px;
+									margin-bottom:40px;
+									font-size:15px;
+								}
+						}
+						.nav-tabs{
+
+							li.active {
+								a {
+									background:@basecolor;
+									color:#fff;
+								}
+							}
+							li {
+								a {
+									float: left;
+									padding: 10px 25px;
+									font-size: 14px;
+									font-weight: 600;
+									display: block;
+									color: #333;
+									i {
+										margin-right:6px;
+									}
+								}
+								a.disable {
+									cursor:not-allowed;
+									opacity:0.2;
+								}
+							}
+						}
+						.tab-content{
+							width:100%;
+							float:left;
+							margin-top:25px;
+							font-size:14px;
+								/* Havale */	
+								.havale {
+									width:100%;
+									float:left;
+									min-height:120px;
+									background-color: #fff;
+									padding: 19px;
+										.h-item{
+											width:100%;
+											float:left;
+											margin-bottom: 20px;
+											padding:20px;
+											border: 1px solid #ddd;
+												label {
+													width:100%;
+													float:left;
+													input {
+														float:left;
+														margin-top:20px;
+													}
+													.h-image {
+														float:left;
+														width:20%;
+														margin:17px 20px;
+													
+															img {
+																max-width:100%;
+															}
+													}
+													.h-info {
+														float:left;
+														width:70%;
+														font-weight:400;	
+													}
+												}
+										}
+								}	
+								/* Kapıda Ödeme */
+								.kapida-odeme {
+									width:100%;
+									float:left;
+									   .kapi-item{
+											width:100%;
+											float:left;
+											margin-bottom: 20px;
+											padding:20px;
+											border: 1px solid #ddd;
+												label {
+													width:100%;
+													float:left;
+													input {
+														float:left;
+														margin-right:30px;
+													}
+													
+													.k-info {
+														float:left;
+														width:70%;
+														font-weight:400;	
+													}
+												}
+										}
+								}	
+								/* Kredi Kartı */
+								.kredi-karti {
+									width:100%;
+									float:left;
+										/*left*/
+										.kredikarti-left{
+											position: relative;
+											width: 50%;
+											float: left;
+												@media screen and (max-width:768px){
+													width:100%;
+												}
+												.taksit-tablosu{
+													width:100%;
+													float:left;
+													margin-top:30px;
+													padding:0 15px;
+														.title {
+															h3 {
+																font-size:15px;
+															}
+														}
+														.taksitler {
+															width:100%;
+															float:left;
+															margin-top:10px;
+															position:relative;
+															img.taksit-gif{
+																position:absolute;
+																left:120px;
+																top:10px;
+															}
+															.installmentOptionsRow{
+																float: left;
+																width: 285px;
+																min-height:193px;
+																color:#000;
+																margin-top:20px;
+																	.installment-container {
+																		clear: both;
+																		margin: 0 auto;
+																		padding-left: 5px;
+																		width: 275px;
+																		
+																			span.installment-bank-logo{
+																				float:left;
+																			}
+																			ul.installments {
+																					border: 1px solid #d7d7d7;
+																					float: left;
+																					list-style: none outside none;
+																					margin: 0;
+																					padding: 0;
+																					width:100%;
+																					li.selected {
+																						background:#e5e5e5;
+																					}
+																					li {
+																						width:100%;
+																						float:left;
+																						font-size:14px;
+																						cursor:pointer;
+																						padding:4px 5px;
+																						
+																							&:hover{
+																								background:#e5e5e5;
+																							}
+																							input {
+																								float:left;
+																								margin-right:2px;
+																							}
+																							span.iyzi-inst-label{
+																								float: left;
+																								padding: 0 10px 0 5px;
+																								text-align: right;
+																							}
+																							span.iyzi-inst-amount{
+																								float:left;
+																							}
+																							
+																					}
+																			}
+																	}
+															}
+														}
+												}
+												.kart-bilgileri {
+													width:100%;
+													float:left;
+														 .form-group{
+															margin-bottom:10px;
+															width:100%;
+															float:left;
+																 input {
+																	padding:2px 10px;
+																	&:focus {
+																		box-shadow:none;
+																		border:1px solid @basecolor;
+																		background:#fff;
+																	}
+																}
+																select {
+																	&:focus {
+																		box-shadow:none;
+																		border:1px solid @basecolor;
+																		background:#fff;
+																	}
+																}
+																label {
+																	margin-bottom:5px!important;
+																	font-weight:600;
+																}
+														}
+														.ucdcontent{
+															float:left;
+															width:100%;
+															margin-top:15px;
+															position:relative;	
+																.ucd-wrap {
+																	float:left;
+																	width:100%;
+																	 label {
+																		width:auto!important;
+																		 input {
+																			float:left!important;
+																			margin-right:5px;
+																			width:20px!important;
+																			height:auto!important;
+																		}
+																		span {
+																			float:left;
+																			font-size:13px;
+																			color:#000;
+																			margin-top:2px;
+																		}
+																	 }
+																	  a {
+																		background:@basecolor;
+																		position:relative;
+																		font-size:14px;
+																		width:23px;
+																		height:23px;
+																		float:left;
+																		color:#fff;
+																		padding-top:2px;
+																		margin-left:10px;
+																		margin-top:3px;
+																		font-weight:bold;
+																		border-radius:50px;
+																		text-align:center;
+																	}
+																}
+																
+															}
+												}
+										}
+										/*right*/
+										.kredi-karti-right{
+										    float: right;
+											width: 45%;
+											z-index: 1;
+											position: relative;
+												.creditCardBack {
+													.front {
+														top: 15px!important;
+														left: -12px!important;
+														.transition(all,0.2s,ease-out);
+														z-index:1;
+													}
+													.back {
+														top: 0!important;
+														left: -24px!important;
+														z-index:4!important;
+														.transition(all,0.2s,ease-out);
+													}
+												}
+												.creditCardFront {
+													top: 15px!important;
+													left: -12px!important;
+												}	
+												.kredi-karti-content {
+													position: relative;
+													height: 218px;
+													
+													.front{
+														top: 0;
+														left: -24px;
+														background: url("../images/kartfront.png") no-repeat;
+														height: 200px;
+														width: 318px;
+														z-index: 2;
+														position: absolute;
+														.transition(all,0.2s,ease-out);
+														/* Elementler */
+															span {
+															    color: #898989;
+																position: absolute;
+																font-size: 20px;
+																line-height: 20px;
+																letter-spacing: 0.5px;
+																font-weight: 600;
+																padding: 0 2px;
+																z-index: 4;
+															}
+															.cartLogo {
+																top: 15px;
+																right: 21px;
+																z-index: 4;
+															}
+															.cartNo {
+																top: 100px;
+																left: 23px;
+																z-index: 2;
+															}
+															.cartDate {
+															    top: 128px;
+																left: 182px;
+																z-index: 3;
+																font-size: 15px;
+																	em {     font-style: normal;}
+															}
+															.cartName {
+															    top: 151px;
+																left: 23px;
+																z-index: 4;
+																max-width: 155px;
+																overflow: hidden;
+																word-break: break-all;
+																font-size: 15px;
+															}
+															.cartType {
+																top: 151px;
+																right: 21px;
+																z-index: 2;
+																font-size: 13px;
+																	.card-master {
+																	  width: 55px;
+																	  height: 32px;
+																	  float: left;
+																	  background: url('../images/ccw.png');
+																	  background-repeat: no-repeat;
+																	  background-position: 0 0;
+																	}
+																	 
+																	 .card-visa {
+																	  width: 55px;
+																	  height: 32px;
+																	  float: left;
+																	  background: url('../images/ccw.png');
+																	  background-repeat: no-repeat;
+																	  background-position: -55px 0;
+																	}
+																    .card-american {
+																	  width: 55px;
+																	  height: 32px;
+																	  float: left;
+																	  background: url('../images/ccw.png');
+																	  background-repeat: no-repeat;
+																	  background-position: -168px 0;
+																	}
+															}
+													}
+													.back {
+														z-index: 1;
+														top: 15px;
+														left: -12px;
+														background: url("../images/kartback.png") no-repeat;
+														height: 200px;
+														width: 318px;
+														position: absolute;
+														.transition(all,0.2s,ease-out);
+															.cardCvc {  position:absolute;  top: 88px; left: 137px}
+															
+													}
+												}
+										}
+								}
+						}
+				}
+				/* t bilgier*/
+				.adres-secimi {
+					width:100%;
+					float:left;
+					background: #fff;
+					border: solid 1px #e4e4e4;
+					padding:15px 25px;
+					
+						.title{
+							width:100%;
+							float:left;
+							margin-top:10px;
+								i {
+									float:left;
+									font-size:30px;
+									color:@basecolor;
+									margin-right:10px;
+								}
+								.title-right {
+									float:left;
+									h4 {
+										display:block;
+										font-weight:500;
+										
+									}
+									span {
+										font-size:13px;
+										display:block;
+										margin-top:3px;
+									}
+								}
+						}
+						.secim-content {
+							width:100%;
+							float:left;
+							margin-top:25px;
+							position:relative;
+								
+								.adres-select{
+								
+									h5 {
+										display:block;
+										margin-bottom:10px;
+										font-size:14px;
+									}
+									.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-controls {
+										opacity:0.3;
+									}
+									 select {
+										width:100%;
+										float:left;
+										border-radius:0;
+										border:1px solid #e4e4e4;
+										box-shadow:none;
+										background:#f5f5f5;
+										
+										padding-top:4px;
+										padding-bottom:4px;
+										@media screen and (max-width:768px){
+									margin-bottom:20px;
+								}
+											option {
+									
+												font-size:15px;
+											
+											}
+										&:focus {
+											box-shadow:none;
+											border:1px solid #ccc;
+											background:#fff;
+										}
+									 }
+								}
+							.adres-disable{
+								width:100%;
+								float:left;
+								margin-top:25px;
+								margin-bottom:10px;
+									input {
+										float:left;
+										margin-right:4px;
+										
+									}
+									label {
+										font-weight:400;
+										float:left;
+										font-size:13px;
+										line-height:21px;
+										margin-top:4px;
+									}
+							}	
+							.adres-tanimla {
+								width:100%;
+								float:left;
+								font-size:14px;
+								padding:15px 15px;
+								border:1px solid #ddd;
+								background:#f5f5f5;
+									a {
+										font-size:14px;
+										color:green;
+									}
+							}
+						}
+				}
+				.kargo-secimi {
+					width:100%;
+					float:left;
+					background: #fff;
+					border: solid 1px #e4e4e4;
+					padding:15px 25px;
+					margin-top:20px;
+					margin-bottom:20px;
+						.title{
+							width:100%;
+							float:left;
+							margin-top:10px;
+								i {
+									float:left;
+									font-size:30px;
+									color:@basecolor;
+									margin-right:10px;
+								}
+								.title-right {
+									float:left;
+									h4 {
+										display:block;
+										font-weight:500;
+										
+									}
+									span {
+										font-size:13px;
+										display:block;
+										margin-top:3px;
+									}
+								}
+						}
+						.kargo-list {
+							width:100%;
+							float:left;
+							margin-top:15px;
+							ul {
+								li {
+								    label {
+										width:100%;
+										font-weight:400;
+									}
+									padding: 8px 10px;
+									border:1px solid #f5f5f5;
+									font-size: 14px;
+									width:100%;
+									float:left;
+									margin-bottom:8px;
+									.kargoinput {
+										float:left;
+										margin-right:10px;
+										margin-top:14px;
+									}
+									.kargoimg {
+									    width: 70px;
+										height: 40px;
+										position: relative;
+										
+										border: solid 1px #eee;
+										background: #fff;
+										margin-top:5px;
+										margin-right:10px;
+										float:left;
+											img {
+												position: absolute;
+												top: 0;
+												left: 0;
+												bottom: 0;
+												right: 0;
+												margin: auto;
+												max-width: 90%;
+												max-height: 90%;
+											}
+									}
+									.kargoname {
+										float:left;
+										margin-top:15px;
+											.kargo-price {
+												float:none;
+												display:inline-block;
+												margin:0 5px;
+											}
+									}
+								}
+							}
+						}
+				}
+				.siparis-notu{
+					width:100%;
+					float:left;
+					background: #fff;
+					border: solid 1px #e4e4e4;
+					padding:15px 25px;
+					margin-top:5px;
+					margin-bottom:20px;
+						.title{
+							width:100%;
+							float:left;
+							margin-top:10px;
+								i {
+									float:left;
+									font-size:30px;
+									color:@basecolor;
+									margin-right:10px;
+								}
+								.title-right {
+									float:left;
+									h4 {
+										display:block;
+										font-weight:500;
+										
+									}
+									span {
+										font-size:13px;
+										display:block;
+										margin-top:3px;
+									}
+								}
+						}
+						textarea {
+							resize:none;
+							margin-top:25px;
+							float:left;
+							width:100%;
+							height:140px;
+							&:focus {
+									box-shadow:none;
+									border:1px solid #ccc;
+									background:#fff;
+								}
+						}
+				}
+		}
+		.back-btn {
+			width:100%;
+			float:left;
+			padding:0 20px;
+			margin-bottom:25px;
+				a {
+					background: none #fff;
+					color: #a0a0a0;
+					margin: 0 0 0 0;
+					padding: 5px 30px;
+					width: auto;
+					height: auto;
+					margin-top: 15px;
+					border-radius: 3px;
+					line-height: 30px;
+					font-size: 16px;
+					border: 1px solid #e5e5e5;
+					float: left;
+					font-weight: 500;
+					.transition(all,0.2s,linear);
+						&:hover {
+							background:@basecolor;
+							color:#fff;
+							.transition(all,0.2s,linear);
+						}
+					 i{ margin-right:6px; }
+				}
+		}
+		.sepet-page {
+			width:100%;
+			float:left;
+			margin-top:25px;
+			background:#fff;
+				.back-btn {
+					
+				}
+				.sepet-table {
+					width:100%;
+					float:left;
+					 table {
+					     width: 100%;
+						 max-width: 100%;
+						 border: 1px solid #e9ecef;
+					
+						 color: #374250;
+						 font-size:15px;
+						 background:#fff;		
+						 thead {
+							margin: 4px 0;
+							background-color: #f5f5f5;
+							//border-bottom:none;
+							tr {
+								border-bottom:none;
+									th {
+										border-top: 1px solid #e9ecef;
+										 border-bottom: 1px solid #e9ecef;
+										 padding-top: 17px;
+										 vertical-align: middle !important;
+										padding-bottom: 17px;
+									}
+							}
+						 }
+						 tbody {
+					
+							tr {
+								
+								td.urun-bilgi{
+									
+									a {
+										width:80px;
+										float:left;
+											img {
+												float:left;
+												width:100%;
+											}
+									}
+									.sepet-desc {
+										color: #374250;
+										font-weight:600;
+										float:left;
+										margin-left:10px;
+									}	
+								}
+								td {
+									vertical-align: middle !important;
+									 border-top: 1px solid #e9ecef;
+									 font-size:14px;
+									 padding: .75rem;
+									 a.remove {
+										color:#333;
+											&:hover { color:@basecolor;}
+									}
+								}
+							}
+						 }
+					 }
+				}
+			.sepet-alt {
+				width:100%;
+				float:left;
+				background-color: #f5f5f5;
+				padding:20px 0;
+					.sepet-toplam {
+						float:right;
+						padding-right:20px;
+							span {
+								font-weight:700;
+								font-size:17px;
+								color: #374250;
+							}
+					}
+			}
+			.sepet-siparis {
+				width:100%;
+				float:left;
+				margin: 15px 0;
+				padding:10px 0;
+					button {
+						font-size:16px;
+						padding:15px 50px;
+						float:right;
+						font-weight:700;
+						color: #fff;
+						.transition(all,0.2s,linear);
+						background:@basecolor;
+						border:none;
+							&:hover {
+								background:#333;
+								color:#fff;
+								.transition(all,0.2s,linear);
+							}
+					}
+			}	
+		}
+	.sepet-page-right {
+		width:100%;
+		float:left;
+		margin-top:25px;	
+			/* Mini Sepet */
+			.mini-sepet {
+				width:100%;
+				float:left;
+				background-color: #fff;
+				border: 1px solid #e5e5e5;
+				padding: 19px;
+				width: 100%;
+				margin: 0;
+				margin-top:20px;
+					.title {
+						width:100%;
+						float:left;
+						cursor:pointer;
+							span {
+								color:@basecolor;
+								font-size:14px;
+								float:left;
+							}
+							a {
+								float:right;
+								font-size:14px;
+								color:#333;
+							}
+					}
+					.urun-list {
+						width:100%;
+						float:left;
+						margin-top:15px;
+							.urun-item {
+							    display: block;
+								padding: 0;
+								margin: 0 0 20px 0;
+								float: left;
+								width: 100%;
+									.urun-img{
+										width: 25%;
+										margin-right: 8px;
+										float: left;
+										text-align: center;
+											img {
+												height:auto;
+												display:block;
+												width:100%;
+												border:1px solid #e5e5e5;
+											}
+									}
+									.urun-infos {
+										    width: 71%;
+											float: right;
+											font-size:13px;
+												.name {
+													width:100%;
+													float:left;
+													line-height:17px;
+													margin-top:3px;
+														.right-varyants{ 
+															margin-top:8px;
+														}
+														span {
+															display:block;
+															
+														}
+														span.var-desc {
+															float:left!important;
+															font-size:12px;
+															margin-right:5px;
+															
+														}
+														span.varyant-deger {
+															float:left!important;
+															font-size:12px;
+															p {
+																float:right;
+																margin:0 5px;
+															}
+														}
+												}
+									}
+							}
+					}
+			}
+			.sip-done{
+				width:100%;
+				float:left;
+					button {
+						background: none @basecolor;
+						color: #fff;
+						text-align: center;
+						margin: 0 auto;
+						float: none;
+						width: 100%;
+						height: auto;
+						display: block;
+						border-radius: 3px;
+						line-height: 28px;
+						font-size: 16px;
+						border: 0;
+						font-weight: normal;
+						padding: 5px 0;
+						.transition(all,0.2s,linear);
+							&:hover {
+									background:#333;
+									.transition(all,0.2s,linear);
+								}
+							  i {
+								margin-left:20px;
+							  }
+					}
+					a {
+					    background: none @basecolor;
+						color: #fff;
+						text-align: center;
+						margin: 0 auto;
+						float: none;
+						width: auto;
+						height: auto;
+						display: block;
+						border-radius: 3px;
+						line-height: 28px;
+						font-size: 16px;
+						border: 0;
+						font-weight: normal;
+						padding: 5px 0;
+						.transition(all,0.2s,linear);
+							&:hover {
+								background:#333;
+								.transition(all,0.2s,linear);
+							}
+						  i {
+							margin-left:20px;
+						  }
+					}
+			}
+			.sozlesmeler {
+				width:100%;
+				float:left;
+				background-color: #fff;
+				border: 1px solid #e5e5e5;
+				padding: 19px;
+				width: 100%;
+				margin-top:5px;
+				margin-bottom:20px;
+				position:relative;
+				min-height:120px;
+				font-size:14px;
+					.form-group {
+						position:relative;
+						min-height:33px;
+							.form-control-feedback { top:33px;}
+					}
+					.sozlesme-1{
+						width:100%;
+						float:left;
+						position:relative;
+					}
+					.sozlesme-2{
+						width:100%;
+						float:left;
+						position:relative;
+					}
+					label {
+						font-weight:400;
+					}
+					a {
+						font-size:14px;
+						color:#333;
+						font-weight:600;
+					}
+			}
+
+			
+			/* Basket */
+			.basket-right{
+				width:100%;
+				float:left;
+				background-color: #fff;
+				border: 1px solid #e5e5e5;
+				padding: 19px;
+				width: 100%;
+				margin-top:20px;
+				margin-bottom:20px;
+				position:relative;
+				min-height:180px;
+					
+					.overlay-sepet {
+						width:100%;
+						height:100%;
+						position:absolute;
+						background:#fff;
+						left:0;
+						z-index:2;
+						display:none;
+						top:0;
+							img {
+								width: 32px;
+								height: 32px;
+								position: absolute;
+								left:50%;
+								top:50%;
+								 transform: translate(-50%, -50%);
+								 -webkit-transform: translate(-50%, -50%);
+							}
+					}
+				ul {
+					width:100%;
+					float:left;
+					li.genel-toplam {
+						
+						span {
+							font-weight:600;
+						}
+						span.tutar {
+							color:@basecolor;
+							
+						}
+					}
+					li {
+						width:100%;
+						float:left;
+						padding:4px 0;
+						
+						span {
+							float:left;
+							font-size:14px;
+							font-weight:400;
+							&:last-child {
+								float:right;
+							}
+						}
+						p {
+							float:right;
+							font-size:14px;
+							font-weight:400;
+							margin-left:3px;
+						}
+					}
+				}
+
+			}
+	}	
+}
+
+/* Odeme Sonuc */
+.odeme-sonuc{
+	width:100%;
+	float:left;
+	min-height:450px;
+	margin-top:25px;
+	background: #fff;
+	margin-bottom:20px;
+    border: solid 1px #e4e4e4;
+		.siparis-no {
+			width:100%;
+			float:left;
+			text-align:center;
+			padding:10px 30px;
+		}
+		.odeme-success {
+			width:100%;
+			float:left;
+			text-align:center;
+			padding:20px 30px;
+				.icon {
+					width:100%;
+					float:left;
+					margin-top:25px;
+					text-align:center;
+					margin-bottom:5px;	
+						i {
+							font-size:40px;
+							border:2px solid #7ea82d;
+							 color: #7ea82d;
+							 padding:15px;
+							 border-radius:50%;
+						}
+					
+				}
+				h2 {
+					float:left;
+					font-size:23px;
+					color: #333;
+					width:100%;
+					font-weight:bold;
+					margin-left:15px;
+					margin-top:9px;
+				}
+				span {
+					width:100%;
+					float:left;
+					margin-top:15px;
+					font-size:14px;
+					text-align:center;
+					padding-bottom:20px;
+					border-bottom: solid 1px #eee;
+				}
+		}
+		.odeme-text{
+			width:100%;
+			float:left;
+			font-size:14px;
+			text-align:center;
+			margin-bottom:15px;
+			padding:5px 15px;
+		}
+		.odeme-false{
+			width:100%;
+			float:left;
+			font-size:14px;
+			text-align:center;
+			margin-bottom:15px;
+			padding:5px 15px;
+			.icon {
+					width:100%;
+					float:left;
+					margin-top:25px;
+					text-align:center;
+					margin-bottom:5px;	
+						i {
+							font-size:25px;
+							border:2px solid #d73737;
+							 color: #d73737;
+							 padding:10px 15px;
+							 border-radius:50%;
+						}
+						
+					
+				}
+				h4 {
+					width:100%;
+					float:left;
+					font-size:16px;
+					font-weight:600;
+					color:#333;
+					margin-top:15px;
+				}
+				span {
+					width:100%;
+					float:left;
+					margin-top:10px;
+					padding:5px 20px 35px 20px;
+					border-bottom: solid 1px #eee;
+				}
+				
+		}
+		.odeme-links{
+			width:100%;
+			float:left;
+			margin-top:15px;
+			text-align:center;
+				a { 
+					display:inline-block;
+					padding:7px 24px;
+					font-size:14px;
+					border-radius:3px;
+					margin:0 3px;
+				}
+				a.s{
+					background:@basecolor;
+					color:#fff;
+						&:hover {
+							background:#333;
+							color:#fff;
+						}
+				}
+				a.b {
+					background: #eee;
+					color:#666;
+					&:hover {
+							background:#333;
+							color:#fff;
+						}
+				}
+		}
+		.failure {
+			width:100%;
+			float:left;
+		}
+}
