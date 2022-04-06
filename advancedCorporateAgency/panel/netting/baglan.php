@@ -7,7 +7,7 @@
 
 try {
 
-	$db=new PDO("mysql:host=localhost;dbname=izbarco_ra;charset=utf8",'izbarco','Samy3li.32');
+	$db=new PDO("mysql:host=localhost;dbname=izbarco_ra;charset=utf8",'izbarco','PASSWORD');
 	//echo "veritabanı bağlantısı başarılı";
 }
 
